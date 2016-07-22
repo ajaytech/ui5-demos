@@ -1,0 +1,201 @@
+/**
+* Copyright (c) 2013 SAP AG, All Rights Reserved
+*
+* Theming Engine 1.16.1
+* data:{"Path": "UI5.sap/suite/ui/generic/template.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.5.20160414054606", "Source": "1.34.5", "Engine": "1.16.1"}}
+*/
+
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/base/global.less (Version 1.34.9) *******************/
+
+
+/******************* FILE /UI5/sap/suite/ui/generic/template/themes/base/library.less (Version 1.34.5) *******************/
+
+/* START "ListReport.less" */
+.sapUiMedia-Std-Desktop .sapSmartTemplatesListReportSmartTable {
+  padding: 1rem 2rem;
+}
+.sapUiMedia-Std-Tablet .sapSmartTemplatesListReportSmartTable {
+  padding: 1rem;
+}
+.sapUiMedia-Std-Phone .sapSmartTemplatesListReportSmartTable {
+  padding: 1rem 0;
+}
+.sapSmartTemplatesListReportPageOverflow .sapMPageScroll {
+  overflow: auto;
+}
+.sapSmartTemplatesListReportDraftInfoIcon.sapUiIcon {
+  font-family: SAP-icons;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+/* END "ListReport.less" */
+/* START "ObjectPage.less" */
+.sapUiMedia-Std-Desktop .sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderImage,
+.sapUiMedia-Std-Tablet .sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderImage {
+  height: 6rem;
+  width: 6rem;
+  border: 1px solid #cccccc;
+}
+.sapUiMedia-Std-Phone .sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderImage {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #cccccc;
+}
+.sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderObjectImageForce .sapUxAPObjectPageHeaderObjectImage,
+.sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderObjectImage {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #cccccc;
+}
+.sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderContent .sapUxAPObjectPageHeaderContentItem.sapSmartTemplatesObjectPageHeaderImage {
+  margin-right: 2rem;
+}
+.sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderContent .sapUxAPObjectPageHeaderContentItem {
+  margin-right: 3rem;
+  line-height: 1rem;
+}
+html[dir="rtl"] .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderContent .sapUxAPObjectPageHeaderContentItem {
+  margin-right: 0;
+  margin-left: 3rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderAddress .sapSmartTemplatesObjectPageHeaderAddressLabel {
+  margin-bottom: 0.5rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderAddress .sapSmartTemplatesObjectPageHeaderAddressValue {
+  line-height: 1.5rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsImage {
+  line-height: 3rem;
+  margin-right: .75rem;
+  font-size: 2.25rem;
+  font-weight: normal;
+  width: 3rem;
+  height: 3rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint .sapSmartTemplatesObjectPageDataPointLabel {
+  margin-bottom: 0.5rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint .sapSmartTemplatesObjectPageDataPointNumericValue .sapMText,
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint .sapSmartTemplatesObjectPageDataPointNumericValue .sapMLnk,
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint .sapSmartTemplatesObjectPageDataPointNumericValue .sapMText.sapUiCompSmartFieldUnit,
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint .sapSmartTemplatesObjectPageDataPointNumericValue .sapMObjStatusText {
+  font-size: 1.375rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint .sapSmartTemplatesObjectPageDataPointTextualValue {
+  margin-top: 0.425rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint div:nth-child(2) .sapMObjStatusText {
+  line-height: normal;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint div:nth-child(2) .sapMObjStatusIcon {
+  display: none;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageDataPoint .sapUiCompUOM > div:nth-child(2) {
+  max-width: initial;
+  min-width: initial;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsListContainer {
+  margin-left: 0.5rem;
+}
+html[dir="rtl"] .sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsListContainer {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsList .sapSmartTemplatesObjectPageContactsListItem {
+  border: 0;
+  float: left;
+  width: 24rem;
+  padding: 0 0.5rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsList .sapMGrowingList {
+  clear: both;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsList .sapSmartTemplatesObjectPageContactsListContactTitle {
+  font-size: 1rem;
+  margin-top: 0.1rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsList .sapSmartTemplatesObjectPageContactsListContactSubTitle {
+  margin-top: 0.3rem;
+}
+.sapSmartTemplatesObjectPageContactsQuickView .sapUiSimpleForm .sapUiRGLContainerCont {
+  padding-bottom: 0;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectDraftStatus {
+  font-style: italic;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesSmartForm .sapMTB {
+  display: none;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesSmartForm .sapUiFormTitle:empty {
+  margin: 0;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderCollection > div:nth-child(n+2) {
+  margin-top: 0.5rem;
+}
+.sapUiMedia-Std-Tablet .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderContent,
+.sapUiMedia-Std-Desktop .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderContent,
+.sapUiMedia-Std-Tablet .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderIdentifier,
+.sapUiMedia-Std-Desktop .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderIdentifier {
+  padding-left: 3rem;
+  padding-right: 0;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderForm .sapSmartTemplatesObjectPageHeaderFormTitle {
+  font-size: 16px;
+  margin-bottom: 0.9rem;
+  line-height: 1rem;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderForm .sapMLabel:after {
+  content: ":";
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderForm .sapSmartTemplatesObjectPageHeaderFormField,
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageHeaderForm .sapSmartTemplatesObjectPageHeaderFormLabel {
+  font-size: 0.875rem;
+  line-height: 1.320rem;
+}
+html[dir="rtl"] .sapUiMedia-Std-Tablet .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderContent {
+  padding-right: 3rem;
+  padding-left: 0;
+}
+html[dir="rtl"] .sapUiMedia-Std-Desktop .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderContent {
+  padding-right: 3rem;
+  padding-left: 0;
+}
+html[dir="rtl"] .sapUiMedia-Std-Tablet .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderIdentifier {
+  padding-right: 3rem;
+  padding-left: 0;
+}
+html[dir="rtl"] .sapUiMedia-Std-Desktop .sapSmartTemplatesObjectPage .sapUxAPObjectPageHeaderIdentifier {
+  padding-right: 3rem;
+  padding-left: 0;
+}
+
+/******************* FILE /Base/baseLib/sap_bluecrystal/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/sap_bluecrystal/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/suite/ui/generic/template/themes/sap_bluecrystal/library.less (Version 1.34.5) *******************/
+
+/* START "ListReport.less" */
+.sapSmartTemplatesListReportDraftInfoIcon.sapUiIcon {
+  color: #666666;
+}
+/* END "ListReport.less" */
+/* START "ObjectPage.less" */
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsList .sapSmartTemplatesObjectPageContactsListContactSubTitle {
+  color: #666666;
+}
+.sapSmartTemplatesObjectPage .sapSmartTemplatesObjectPageContactsImage {
+  background-color: #f2f2f2;
+  color: #bfbfbf;
+}
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/custom.less (Version 10.30.3.240577.0) *******************/
+
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/custom1bluecrystal3/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/suite/ui/generic/template/themes/custom1bluecrystal3/library.less (Version 1.34.5) *******************/
+
+
+.sapThemeMetaData-UI5-sap-suite-ui-generic-template{background-image: url('data:text/plain;utf-8,{"Path": "UI5.sap/suite/ui/generic/template.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.5.20160414054606", "Source": "1.34.5", "Engine": "1.16.1"}}');}

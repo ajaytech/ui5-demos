@@ -1,0 +1,13 @@
+{
+	"sEntity": "Theme",
+	"sId": "custom1bluecrystal",
+	"sLabel": "Custom Blue Crystal",
+	"oExtends": "Base.baseLib.sap_bluecrystal",
+	"aFiles": [
+		"base",
+		"preview",
+		"custom"
+	],
+	"sTextDirections": "LTR",
+	"sFallbackThemeId": "sap_goldreflection"
+}

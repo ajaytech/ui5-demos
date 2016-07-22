@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+
+
+<script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+	data-sap-ui-libs="sap.m,sap.ui.ux3" data-sap-ui-theme="sap_bluecrystal">
+	
+</script>
+<!-- add sap.ui.table,sap.ui.ux3 and/or other libraries to 'data-sap-ui-libs' if required -->
+
+<script>
+	jQuery.sap.require("sap.m.MessageBox");
+
+	var oShell = new sap.ui.ux3.Shell({
+
+		appTitle : "Demo",
+		showLogoutButton : true,
+		logoutButtonTooltip : "Logout",
+		showSearchTool : true,
+		showInspectorTool : true,
+		showFeederTool : true,
+		showTools : true,
+		showPane : true,
+		worksetItems : [ new sap.ui.ux3.NavigationItem({
+			text : "Home",
+			key : "Home",
+			press : function(oEvt) {
+				sap.m.MessageToast.show("Home pressed!");
+			}
+		}), new sap.ui.ux3.NavigationItem({
+			text : "Menu 1",
+			key : "M_1",
+			press : function(oEvt) {
+				sap.m.MessageToast.show("Menu1 pressed!");
+			}
+		}) ],
+		content : [ new sap.m.Button({
+			text : "Simple Button"
+		}) ],
+		worksetItemSelected : function(oEvt) {
+
+			sap.m.MessageToast.show(oEvt.getParameter("id"));
+
+		},
+		paneBarItems : [
+
+		new sap.ui.core.Item({
+			text : "Demo Item"
+		}) ]
+
+	}).placeAt("content");
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<div id="content"></div>
+</body>
+</html>

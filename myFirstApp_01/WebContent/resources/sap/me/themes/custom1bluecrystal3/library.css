@@ -1,0 +1,933 @@
+/**
+* Copyright (c) 2013 SAP AG, All Rights Reserved
+*
+* Theming Engine 1.16.1
+* data:{"Path": "UI5.sap/me.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.9.20160414054600", "Source": "1.34.9", "Engine": "1.16.1"}}
+*/
+
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/base/global.less (Version 1.34.9) *******************/
+
+
+/******************* FILE /UI5/sap/me/themes/base/library.less (Version 1.34.9) *******************/
+
+/* START "shared.css" */
+/* This CSS shares it rules with all other CSS of this library */
+/* END "shared.css" */
+/* START "Calendar.css" */
+.sapMeCalendar {
+  position: relative;
+  margin: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sapMeCalendar > .sapMeCalendarPrevious {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.sapMeCalendar > .sapMeCalendarNext {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.sapMeCalendar > .sapMeCalendarMonth {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthName {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.2em;
+  padding: 0.7em 0 0.4em 0;
+  font-weight: 700;
+  height: 44px;
+  /* the height of the prevBtn & nextBtn */
+}
+.sapMeCalendar > .sapMeCalendarMonth > div > .sapMeCalendarMonthDay {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay {
+  padding: 15px 0px;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay > * {
+  pointer-events: none;
+  /* to avoid tap events inside --> best practice is do a Day control */
+}
+/* END "Calendar.css" */
+/* START "CalendarLegend.css" */
+/* ============================================= */
+/* CSS for control sap.me/CalendarLegend.control */
+/* ============================================= */
+.sapMeCalendarLegend {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.sapUIMeLegendOuterContainer {
+  min-height: 3rem;
+}
+.sapUIMeCalendarLegendLabels {
+  display: inline-block;
+  margin-left: 0.75rem;
+  font-size: 0.875rem;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  vertical-align: middle;
+}
+.sapMLabel.sapUIMeCalendarLegendLabels::after {
+  content: none;
+}
+.sapUIMeLegendMenuContainer {
+  margin-top: 0.8rem;
+  overflow: hidden;
+  height: auto;
+  margin-left: 0rem;
+}
+.sapUIMeLegendMenu {
+  display: inline-block;
+  overflow: hidden;
+  height: auto;
+  margin-left: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+.sapUIMeLegendColor {
+  height: .875rem;
+  width: .875rem;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.sapUIMeLegendLine {
+  font-size: 0.875rem;
+  margin-top: 0rem;
+  vertical-align: middle;
+  height: 1.5rem;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.sapUIMeLegendIcon {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  float: left;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.sapUIMeLegendArrow {
+  display: inline-block;
+  float: right;
+}
+/* END "CalendarLegend.css" */
+/* START "OverlapCalendar.css" */
+.sapMeOverlapCalendarDay {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  padding: 15px 0px;
+  border: 1px solid;
+}
+/* Overwriting calendar css */
+.sapMeOverlapCalendarCalendar > .sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDayNames {
+  margin-top: .25rem;
+}
+.sapMeOverlapCalendarCalendar > .sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays {
+  margin-bottom: 0rem;
+}
+/* Overlap Calendar Grid */
+.sapMeOverlapCalendarGrid {
+  border-bottom: 0.0625rem solid;
+}
+.sapMeOverlapCalendarOverlapIndicator {
+  height: 0.4375rem;
+  line-height: 0px;
+  border-top: 0.0625rem solid;
+  border-bottom: 0.0625rem solid;
+}
+.sapMeOverlapCalendarOverlap {
+  height: 0.4375rem;
+  display: inline-block;
+  position: relative;
+}
+.sapMeOverlapCalendarDay {
+  text-align: center;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  box-sizing: border-box;
+  padding: 0.9375rem 0px;
+  border-bottom: 0.0625rem solid;
+  border-left: .0625rem solid;
+  border-right: none;
+  border-top: none;
+}
+.sapMeOverlapCalendarDay :nth-of-type(1) {
+  border-left: none;
+}
+.sapMeOverlapCalendarDay.sapMeOverlapCalendarDayWithHalf {
+  padding: 0px;
+}
+.sapMeOverlapCalendarHalfDay {
+  position: absolute;
+  /* half days are absolute because we need two of them to overlap in the parent div */
+  border-bottom: 0.0625rem solid;
+  border-left: 0.0625rem solid;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+.sapMeOverlapCalendarRowLabels {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  display: inline;
+}
+.sapMeOverlapCalendarNameLbl {
+  font-face: "Open Sans Regular";
+  font-size: .875rem;
+  margin-left: 1rem;
+  top: .25rem;
+  position: relative;
+  z-index: 3;
+}
+.sapMeOverlapCalendarTypeLbl {
+  position: absolute;
+  font-face: "Open Sans Regular";
+  font-size: .75rem;
+  top: 1.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/******************* FILE /Base/baseLib/sap_bluecrystal/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/sap_bluecrystal/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/me/themes/sap_bluecrystal/library.less (Version 1.34.9) *******************/
+
+/* START "shared.css" */
+/* This CSS shares it rules with all other CSS of this library */
+/* END "shared.css" */
+/* START "Calendar.css" */
+.sapMeCalendar {
+  background-color: #ffffff;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthName {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+.sapMeCalendar > .sapMBtn > .sapMBtnContent {
+  font-size: 0;
+}
+.sapMeCalendar > .sapMeCalendarMonthNotSingle > div.sapMeCalendarMonthDayNames,
+.sapMeCalendar > .sapMeCalendarMonthNotSingle > div.sapMeCalendarMonthDays {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.sapMeCalendar > .sapMeCalendarPrevious {
+  font-size: 1.375rem;
+  color: #666666;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+.sapMeCalendar > .sapMeCalendarNext {
+  font-size: 1.375rem;
+  color: #666666;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+.sapMeCalendar > .sapMeCalendarPrevious:active {
+  background: #24f28e;
+  color: #ffffff;
+}
+.sapMeCalendar > .sapMeCalendarNext:active {
+  background: #24f28e;
+  color: #ffffff;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div > .sapMeCalendarMonthDay {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.625rem;
+  color: #666666;
+  text-transform: uppercase;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDayNames {
+  font-size: 0;
+  height: 15px;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDayNames {
+  margin-top: 1rem;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays {
+  margin-bottom: 1rem;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth).sapMeCalendarDayNow:before {
+  content: "";
+  position: absolute;
+  top: -0.063rem;
+  right: 0;
+  bottom: 0;
+  left: -0.063rem;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 0.688rem 0;
+  position: relative;
+}
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:before {
+  content: "";
+  position: absolute;
+  top: -0.063rem;
+  right: 0;
+  bottom: 0;
+  left: -0.063rem;
+}
+/*
+Design specific
+*/
+/*
+Approval colors
+*/
+/* Normal day */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay {
+  border-bottom: 0.063rem solid #ffffff;
+  border-left: 0.063rem solid #ffffff;
+  color: #666666;
+  background: #f2f2f2;
+  vertical-align: top;
+}
+/* Today */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:not(.sapMeCalendarDayNotInCurrentMonth) {
+  color: #666666;
+}
+/* Today */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:before {
+  border: 0.125rem solid #0bbe67;
+}
+/* Today not in month*/
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:before.sapMeCalendarDayNotInCurrentMonth {
+  border: none;
+}
+/* Weekend (00) */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay6,
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay0 {
+  background: #e5e5e5;
+}
+/* Weekend (00) not in current month */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNotInCurrentMonth,
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay6.sapMeCalendarDayNotInCurrentMonth,
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay0.sapMeCalendarDayNotInCurrentMonth {
+  background: #ffffff;
+  color: #dddddd;
+}
+/* Selected */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth) {
+  background: #24f28e;
+  color: #ffffff;
+}
+/* 00 Selected */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay6.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth,.sapMeCalendarType10),
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay0.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth,.sapMeCalendarType10) {
+  background: #cccccc;
+}
+/* Types */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType00 {
+  background: #e5e5e5;
+}
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth).sapMeCalendarType00 {
+  background: #cccccc;
+}
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType01 {
+  background-color: #defdee;
+}
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType04 {
+  background-color: #defdee;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType06 {
+  background-color: #fae2a6;
+}
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType07 {
+  background-color: #fceaea;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+/* Type 10 to force to be displayed as working day */
+.sapMeCalendarApproval > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType10 {
+  background: #f2f2f2;
+}
+/*
+Action colors
+*/
+/* Normal day */
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay {
+  border-bottom: 0.063rem solid #ffffff;
+  border-left: 0.063rem solid #ffffff;
+  color: #666666;
+  background: #f2f2f2;
+  vertical-align: top;
+}
+/* Today */
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:not(.sapMeCalendarDayNotInCurrentMonth) {
+  font-weight: bolder;
+  font-size: 1.25rem;
+  color: #24f28e;
+}
+/* Today not in month*/
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:before.sapMeCalendarDayNotInCurrentMonth {
+  border: none;
+}
+/* Weekend (00) */
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay6,
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay0 {
+  background: #e5e5e5;
+}
+/* Weekend (00) not in current month */
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNotInCurrentMonth,
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay6.sapMeCalendarDayNotInCurrentMonth,
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay0.sapMeCalendarDayNotInCurrentMonth {
+  background: #ffffff;
+  color: #dddddd;
+}
+/* Selected */
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth) {
+  border: 0.125rem solid #24f28e;
+}
+/* Types */
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType00 {
+  background: #e5e5e5;
+}
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth).sapMeCalendarType00 {
+  background: #cccccc;
+}
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType01 {
+  background-color: #cce8d8;
+}
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType04 {
+  background-color: #cce8d8;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType06 {
+  background-color: #fae2a6;
+}
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType07 {
+  background-color: #fad4d4;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+/* Type 10 to force to be displayed as working day */
+.sapMeCalendarAction > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType10 {
+  background: #f2f2f2;
+}
+/* END "Calendar.css" */
+/* START "CalendarLegend.css" */
+/* ============================================= */
+/* CSS for control sap.me/CalendarLegend.control */
+/* ============================================= */
+.sapUIMeLegendOuterContainer {
+  background-color: #ffffff;
+}
+/* Approval Design*/
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType00 {
+  background-color: #e5e5e5;
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType01 {
+  background-color: #defdee;
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType04 {
+  background-color: #defdee;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType06 {
+  background-color: #fae2a6;
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType07 {
+  background-color: #fceaea;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForToday {
+  border: 0.125rem solid #24f28e;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForSelected {
+  background-color: #24f28e;
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForSelected00 {
+  background-color: #cccccc;
+}
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForNormal {
+  background-color: #f2f2f2;
+}
+/* Action Design*/
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType00 {
+  background-color: #e5e5e5;
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType01 {
+  background-color: #cce8d8;
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType04 {
+  background-color: #cce8d8;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType06 {
+  background-color: #fae2a6;
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType07 {
+  background-color: #fad4d4;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForToday {
+  border: 0.125rem solid #24f28e;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForSelected {
+  background-color: #24f28e;
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForSelected00 {
+  background-color: #cccccc;
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForNormal {
+  background-color: #f2f2f2;
+}
+.sapUIMeLegendIcon {
+  background-color: #ffffff;
+}
+.sapUIMeLegendArrow {
+  font-color: #000000;
+}
+/* END "CalendarLegend.css" */
+/* START "OverlapCalendar.css" */
+.sapMeOverlapCalendar {
+  background: #ffffff;
+}
+.sapMeOverlapCalendarCalendar > .sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay6.sapMeCalendarDayNotInCurrentMonth,
+.sapMeOverlapCalendarCalendar > .sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekDay0.sapMeCalendarDayNotInCurrentMonth,
+.sapMeOverlapCalendarCalendar > .sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay {
+  background: #f2f2f2;
+  color: #666666;
+}
+/* Overlap Calendar Grid */
+.sapMeOverlapCalendarGrid {
+  border-bottom-color: #e5e5e5;
+}
+.sapMeOverlapCalendarOverlapIndicator {
+  border-top-color: #e5e5e5;
+  border-bottom-color: #e5e5e5;
+}
+.sapMeOverlapCalendarDay {
+  border-bottom-color: #ffffff;
+  border-left-color: #ffffff;
+  background: #f2f2f2;
+}
+.sapMeOverlapCalendarHalfDay {
+  border-bottom-color: #ffffff;
+  border-left-color: #ffffff;
+}
+.sapMeOverlapCalendarTypeHalfDayEnd {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, #f2f2f2));
+  background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #f2f2f2 50%);
+  background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #f2f2f2 50%);
+  background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #f2f2f2 50%);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, #f2f2f2 50%);
+}
+.sapMeOverlapCalendarType00 {
+  background-color: #e5e5e5;
+  z-index: -2;
+}
+.sapMeOverlapCalendarType00HalfDayStart {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #e5e5e5), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top left, #e5e5e5 50%, rgba(255, 255, 255, 0) 50%);
+  background: -moz-linear-gradient(top left, #e5e5e5 50%, rgba(255, 255, 255, 0) 50%);
+  background: -o-linear-gradient(top left, #e5e5e5 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(to bottom right, #e5e5e5 50%, rgba(255, 255, 255, 0) 50%);
+}
+.sapMeOverlapCalendarType00HalfDayEnd {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, #e5e5e5));
+  background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #e5e5e5 50%);
+  background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #e5e5e5 50%);
+  background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #e5e5e5 50%);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, #e5e5e5 50%);
+}
+.sapMeOverlapCalendarType01 {
+  background-color: #defdee;
+}
+.sapMeOverlapCalendarType01HalfDayStart {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #defdee), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top left, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+  background: -moz-linear-gradient(top left, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+  background: -o-linear-gradient(top left, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(to bottom right, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+}
+.sapMeOverlapCalendarType01HalfDayEnd {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, #defdee));
+  background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+  background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+  background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+}
+.sapMeOverlapCalendarType04 {
+  background-color: #defdee;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeOverlapCalendarType04HalfDayStart {
+  z-index: 1;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(50%, #defdee), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-linear-gradient(top left, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -moz-linear-gradient(top left, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -o-linear-gradient(top left, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), linear-gradient(to bottom right, #defdee 50%, rgba(255, 255, 255, 0) 50%);
+}
+.sapMeOverlapCalendarType04HalfDayEnd {
+  z-index: 1;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, #defdee));
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, #defdee 50%);
+}
+.sapMeOverlapCalendarType06 {
+  background-color: #fae2a6;
+  z-index: -1;
+}
+.sapMeOverlapCalendarType06HalfDayStart {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #fae2a6), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top left, #fae2a6 50%, rgba(255, 255, 255, 0) 50%);
+  background: -moz-linear-gradient(top left, #fae2a6 50%, rgba(255, 255, 255, 0) 50%);
+  background: -o-linear-gradient(top left, #fae2a6 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(to bottom right, #fae2a6 50%, rgba(255, 255, 255, 0) 50%);
+}
+.sapMeOverlapCalendarType06HalfDayEnd {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, #fae2a6));
+  background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #fae2a6 50%);
+  background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #fae2a6 50%);
+  background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #fae2a6 50%);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, #fae2a6 50%);
+}
+.sapMeOverlapCalendarType07 {
+  background-color: #fceaea;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+}
+.sapMeOverlapCalendarType07HalfDayStart {
+  z-index: 1;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(50%, #fceaea), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-linear-gradient(top left, #fceaea 50%, rgba(255, 255, 255, 0) 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -moz-linear-gradient(top left, #fceaea 50%, rgba(255, 255, 255, 0) 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -o-linear-gradient(top left, #fceaea 50%, rgba(255, 255, 255, 0) 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), linear-gradient(to bottom right, #fceaea 50%, rgba(255, 255, 255, 0) 50%);
+}
+.sapMeOverlapCalendarType07HalfDayEnd {
+  z-index: 1;
+  background-image: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, #fceaea));
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #fceaea 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #fceaea 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, #fceaea 50%);
+  background: url(../../../../../UI5/sap/me/themes/sap_bluecrystal/img/bg_white_transparent.png), linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, #fceaea 50%);
+}
+.sapMeOverlapCalendarNameLbl {
+  color: #000000;
+}
+.sapMeOverlapCalendarTypeLbl {
+  color: #333333;
+}
+/* END "OverlapCalendar.css" */
+/* START "ProgressIndicator.css" */
+/* ======================================================== */
+/* CSS for control sap.me/ProgressIndicator.control */
+/* ======================================================== */
+.sapUIMeProgInd {
+  display: inline-block;
+  background: -moz-linear-gradient(top, #cecece 0%, #e3e3e3 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cecece), color-stop(100%, #e3e3e3));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #cecece 0%, #e3e3e3 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #cecece 0%, #e3e3e3 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #cecece 0%, #e3e3e3 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cecece, endColorstr=#e3e3e3, GradientType=0);
+  /* IE6-9 */
+  height: 1rem;
+  padding-bottom: 2px;
+}
+.sapUIMeProgIndBorder {
+  display: inline-block;
+}
+.sapUIMeProgIndBar {
+  position: relative;
+  background: -moz-linear-gradient(top, #779ecb 0%, #77c8cb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #779ecb), color-stop(100%, #77c8cb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #779ecb 0%, #77c8cb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #779ecb 0%, #77c8cb 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #779ecb 0%, #77c8cb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#779ecb, endColorstr=#77c8cb, GradientType=0);
+  /* IE6-9 */
+  height: 1rem;
+}
+.sapUIMeProgIndBarPOSITIVE {
+  background: -moz-linear-gradient(top, #8fc24d 0%, #406d05 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8fc24d), color-stop(100%, #406d05));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8fc24d 0%, #406d05 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #8fc24d 0%, #406d05 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8fc24d 0%, #406d05 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8fc24d, endColorstr=#406d05, GradientType=0);
+  /* IE6-9 */
+}
+.sapUIMeProgIndBarNEGATIVE {
+  background: -moz-linear-gradient(top, #f7801f 0%, #be6007 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7801f), color-stop(100%, #be6007));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f7801f 0%, #be6007 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #f7801f 0%, #be6007 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f7801f 0%, #be6007 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7801f, endColorstr=#be6007, GradientType=0);
+  /* IE6-9 */
+}
+.sapUIMeProgIndBarCRITICAL {
+  background: -moz-linear-gradient(top, #ff4f00 0%, #ff9e73 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff4f00), color-stop(100%, #ff9e73));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ff4f00 0%, #ff9e73 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #ff4f00 0%, #ff9e73 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ff4f00 0%, #ff9e73 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff4f00, endColorstr=#ff9e73, GradientType=0);
+  /* IE6-9 */
+}
+.sapUIMeProgIndFont {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 5px;
+  vertical-align: top;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.sapUIMeProgIndEndHidden {
+  display: inline-block;
+  width: 1px;
+  visibility: hidden;
+}
+.sapUIMeProgIndEnd {
+  display: inline-block;
+  width: 1px;
+  visibility: visible;
+  height: 1rem;
+  background-image: -webkit-linear-gradient(top, #cecece 0%, #e3e3e3 100%);
+}
+/* END "ProgressIndicator.css" */
+/* START "TabContainer.css" */
+.sapUIMeTabContainerButtons {
+  margin-left: 1rem;
+}
+.sapUIMeTabContainerTab {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-left: 1rem;
+  display: inline-block;
+}
+.sapUIMeTabContainerBtn {
+  font-size: 1.5rem;
+  color: #ffffff;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0.25rem solid #ffffff;
+  box-shadow: 0 0.063rem 0.125rem 0 rgba(128, 128, 128, 0.6);
+  padding: 0;
+  line-height: 3rem;
+  position: absolute;
+  z-index: 0;
+}
+.sapUIMeTabContainerBtnInfo.sapUiIconActive {
+  border: 0.25rem solid #f27020;
+}
+.sapUIMeTabContainerBtnAttachments.sapUiIconActive {
+  border: 0.25rem solid #007cc0;
+}
+.sapUIMeTabContainerBtnNotes.sapUiIconActive {
+  border: 0.25rem solid #ab218e;
+}
+.sapUIMeTabContainerBtnPeople.sapUiIconActive {
+  border: 0.25rem solid #004990;
+}
+.sapUIMeTabContainerBtnInfo {
+  background-color: #f27020;
+}
+.sapUIMeTabContainerBtnAttachments {
+  background-color: #007cc0;
+}
+.sapUIMeTabContainerBtnNotes {
+  background-color: #ab218e;
+}
+.sapUIMeTabContainerBtnPeople {
+  background-color: #004990;
+}
+.sapUIMeTabContainerHiddenBadges {
+  visibility: hidden;
+}
+.sapUIMeTabContainerBadge {
+  font-size: 0.75rem;
+  color: #ffffff;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  min-width: 0.75rem;
+  height: 1rem;
+  position: relative;
+  padding-left: .125rem;
+  padding-right: .125rem;
+  line-height: 1rem;
+  float: right;
+  z-index: 1;
+}
+.sapUIMeTabContainerBadgeInfo {
+  background-color: #f27020;
+}
+.sapUIMeTabContainerBadgeAttachments {
+  background-color: #007cc0;
+}
+.sapUIMeTabContainerBadgeNotes {
+  background-color: #ab218e;
+}
+.sapUIMeTabContainerBadgePeople {
+  background-color: #004990;
+}
+.sapUIMeTabContainerContent {
+  position: relative;
+  padding: 0.125rem 0;
+  margin-top: 0.750rem;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  background-color: #ffffff;
+}
+.sapUIMeTabContainerTabContentScrollable {
+  background-color: #ffffff;
+  padding: 0;
+  overflow-x: auto;
+  overflow-x: hidden;
+}
+.sapUIMeTabContainerTabContent {
+  background-color: #ffffff;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.sapUIMeTabContainerContentArrow {
+  position: absolute;
+  top: -0.45rem;
+  left: 4.16rem;
+  width: 0.750rem;
+  height: 0.750rem;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #ffffff;
+  z-index: 0;
+  border-top: 1px solid #bfbfbf;
+  border-left: 1px solid #bfbfbf;
+}
+.sap-phone .sapUIMeTabContainerButtons {
+  margin-top: 1rem;
+  margin-left: 0rem;
+}
+.sap-phone .sapUIMeTabContainerContentArrow {
+  left: 3.16rem;
+}
+.sapUIMeTabContainerContentClosed {
+  position: relative;
+  padding: 0.125rem 0 0 0;
+  margin-top: 0.750rem;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/custom.less (Version 10.30.3.240577.0) *******************/
+
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/custom1bluecrystal3/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/me/themes/custom1bluecrystal3/library.less (Version 1.34.9) *******************/
+
+
+.sapThemeMetaData-UI5-sap-me{background-image: url('data:text/plain;utf-8,{"Path": "UI5.sap/me.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.9.20160414054600", "Source": "1.34.9", "Engine": "1.16.1"}}');}

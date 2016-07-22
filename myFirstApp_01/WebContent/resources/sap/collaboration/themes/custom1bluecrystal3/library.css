@@ -1,0 +1,309 @@
+/**
+* Copyright (c) 2013 SAP AG, All Rights Reserved
+*
+* Theming Engine 1.16.1
+* data:{"Path": "UI5.sap/collaboration.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.5.20160414054604", "Source": "1.34.5", "Engine": "1.16.1"}}
+*/
+
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/base/global.less (Version 1.34.9) *******************/
+
+
+/******************* FILE /UI5/sap/collaboration/themes/base/library.less (Version 1.34.5) *******************/
+/******************* FILE /Base/baseLib/sap_bluecrystal/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/sap_bluecrystal/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/collaboration/themes/sap_bluecrystal/library.less (Version 1.34.5) *******************/
+
+/* START "shared.css" */
+/* This CSS inherits rules from default/shared.css */
+/* END "shared.css" */
+/* START "Notification.css" */
+/* Desktop & Tablet ----------- */
+.sapClbNotifCursorPointer {
+  cursor: pointer;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifComponent,
+.sapUiMedia-Std-Tablet .sapClbNotifComponent {
+  width: 23.5rem;
+  height: 11rem;
+  background-color: #FFFFFF;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+.sapUiMedia-Std-Desktop .sapClbNotifContainerBox,
+.sapUiMedia-Std-Tablet .sapClbNotifContainerBox {
+  width: 23.5rem;
+  height: 11rem;
+  background-color: #FFFFFF;
+  position: relative;
+}
+/* This is a weird CSS style class. To get the loading animation of the tile to
+display correctly, the UI5 sap.m.Text control we use to display the loading
+animation must contain some text. However, we don't want the text to be visible.
+Therefore, this CSS class makes the text white so that it blends with the background
+color and is invisible to the user. */
+.sapUiMedia-Std-Desktop .sapClbNotifLoadingText,
+.sapUiMedia-Std-Tablet .sapClbNotifLoadingText {
+  position: relative;
+  color: white;
+  font-size: 0.5em;
+}
+/* This class defines the styles for error messages displayed to users.
+The @sapUiNegative LESS variable is specified in the following 2 locations.
+1) "Tiles" page (https://wiki.wdf.sap.corp/wiki/display/fioridesign/Tiles)
+2) "Colors" page (https://wiki.wdf.sap.corp/wiki/display/visualcore/Colors)
+under the "Semantic Text" subsection under the "Font Colors" section.
+The remainder of the styles come from the UX team who designed the tile,
+with the exception of the width, which was obtained by experimenting with
+the width in the browser. */
+.sapUiMedia-Std-Desktop .sapClbNotifErrorText,
+.sapUiMedia-Std-Tablet .sapClbNotifErrorText {
+  font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #cc1919;
+  width: 430px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifProfileImage,
+.sapUiMedia-Std-Tablet .sapClbNotifProfileImage {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-style: solid;
+  border-color: #e5e5e5;
+  border-width: 1px;
+  position: absolute;
+  left: 0.5rem;
+  /* 16 for the padding and 1 px for the container box border*/
+  top: 0.5rem;
+  /* 16 for the padding and 1 px for the container box border*/
+}
+.sapUiMedia-Std-Desktop .sapClbNotifProfileImageHidden,
+.sapUiMedia-Std-Tablet .sapClbNotifProfileImageHidden {
+  visibility: hidden;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifNotificationTypeText,
+.sapUiMedia-Std-Tablet .sapClbNotifNotificationTypeText {
+  font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 1rem;
+  /* This magic number was discovered through experimentation. */
+  position: absolute;
+  top: 0.5rem;
+  left: 4.75rem;
+  right: 0.5rem;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifNotificationMessageText,
+.sapUiMedia-Std-Tablet .sapClbNotifNotificationMessageText {
+  font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  overflow: hidden;
+  height: 5rem;
+  /* This magic number was discovered through experimentation. */
+  position: absolute;
+  top: 2rem;
+  right: 0.5rem;
+  left: 4.75rem;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifNotificationUnreadCountText,
+.sapUiMedia-Std-Tablet .sapClbNotifNotificationUnreadCountText {
+  font-size: 56px;
+  font-family: arial;
+  font-weight: bold;
+  color: #666666;
+  width: 128px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifNewNotificationText,
+.sapUiMedia-Std-Tablet .sapClbNotifNewNotificationText {
+  font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  width: 128px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifNotificationAgeAndGroupText,
+.sapUiMedia-Std-Tablet .sapClbNotifNotificationAgeAndGroupText {
+  font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 14rem;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifNotificationAgeAndGroupContainer,
+.sapUiMedia-Std-Tablet .sapClbNotifNotificationAgeAndGroupContainer {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 14rem;
+}
+.sapUiMedia-Std-Desktop .sapClbNotifNotificationUnreadContainer,
+.sapUiMedia-Std-Tablet .sapClbNotifNotificationUnreadContainer {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  width: 128px;
+}
+/* Smartphones ----------- */
+.sapUiMedia-Std-Phone .sapClbNotifComponent {
+  width: 304px;
+  height: 142px;
+  background-color: #FFFFFF;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+.sapUiMedia-Std-Phone .sapClbNotifContainerBox {
+  width: 304px;
+  height: 142px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+/* This is a weird CSS style class. To get the loading animation of the tile to
+display correctly, the UI5 sap.m.Text control we use to display the loading
+animation must contain some text. However, we don't want the text to be visible.
+Therefore, this CSS class makes the text white so that it blends with the background
+color and is invisible to the user. */
+.sapUiMedia-Std-Phone .sapClbNotifLoadingText {
+  position: relative;
+  color: white;
+  font-size: 0.5em;
+}
+/* This class defines the styles for error messages displayed to users.
+The @sapUiNegative LESS variable is specified in the following 2 locations.
+1) "Tiles" page (https://wiki.wdf.sap.corp/wiki/display/fioridesign/Tiles)
+2) "Colors" page (https://wiki.wdf.sap.corp/wiki/display/visualcore/Colors)
+under the "Semantic Text" subsection under the "Font Colors" section.
+The remainder of the styles come from the UX team who designed the tile,
+with the exception of the width, which was obtained my experimenting with
+the width in the browser. */
+.sapUiMedia-Std-Phone .sapClbNotifErrorText {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #cc1919;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 275px;
+}
+.sapUiMedia-Std-Phone .sapClbNotifProfileImage {
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  border-width: 1px;
+  position: absolute;
+  left: 11px;
+  /* 10 for the padding and 1 px for the container box border*/
+  top: 7px;
+  /* 6 for the padding and 1 px for the container box border*/
+}
+.sapUiMedia-Std-Phone .sapClbNotifProfileImageHidden {
+  visibility: hidden;
+}
+.sapUiMedia-Std-Phone .sapClbNotifNotificationTypeText {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 16px;
+  /* This magic number was discovered through experimentation. */
+  width: 230px;
+  position: absolute;
+  top: 7px;
+  left: 63px;
+}
+.sapUiMedia-Std-Phone .sapClbNotifNotificationMessageText {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  overflow: hidden;
+  height: 62px;
+  width: 230px;
+  position: absolute;
+  top: 27px;
+  left: 63px;
+}
+.sapUiMedia-Std-Phone .sapClbNotifNotificationUnreadCountText {
+  font-size: 32px;
+  font-family: arial;
+  font-weight: bold;
+  color: #666666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100px;
+}
+.sapUiMedia-Std-Phone .sapClbNotifNewNotificationText {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100px;
+}
+.sapUiMedia-Std-Phone .sapClbNotifNotificationAgeAndGroupText {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 175px;
+}
+.sapUiMedia-Std-Phone .sapClbNotifNotificationAgeAndGroupContainer {
+  position: absolute;
+  bottom: 7px;
+  right: 11px;
+  width: 175px;
+}
+.sapUiMedia-Std-Phone .sapClbNotifNotificationUnreadContainer {
+  position: absolute;
+  bottom: 7px;
+  left: 11px;
+  width: 100px;
+}
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/custom.less (Version 10.30.3.240577.0) *******************/
+
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/custom1bluecrystal3/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/collaboration/themes/custom1bluecrystal3/library.less (Version 1.34.5) *******************/
+
+
+.sapThemeMetaData-UI5-sap-collaboration{background-image: url('data:text/plain;utf-8,{"Path": "UI5.sap/collaboration.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.5.20160414054604", "Source": "1.34.5", "Engine": "1.16.1"}}');}

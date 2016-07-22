@@ -1,0 +1,173 @@
+/**
+* Copyright (c) 2013 SAP AG, All Rights Reserved
+*
+* Theming Engine 1.16.1
+* data:{"Path": "UI5.sap/ui/vk.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.5.20160414054602", "Source": "1.34.5", "Engine": "1.16.1"}}
+*/
+
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/base/global.less (Version 1.34.9) *******************/
+
+
+/******************* FILE /UI5/sap/ui/vk/themes/base/library.less (Version 1.34.5) *******************/
+
+/* START "Viewer.less" */
+.sapVizKitViewer {
+  touch-action: none;
+  -ms-touch-action: none;
+  background-color: #f2f2f2;
+}
+.sapVizKitViewport {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-image: linear-gradient(to bottom, #000000, #ffffff);
+  outline-offset: -1px;
+}
+.sapVizKitViewport canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+/* END "Viewport.less" */
+/* START "Overlay.less" */
+/*...........................................................................*/
+/* LESS for control sap.ui.vk/Overlay.control...................................*/
+/*...........................................................................*/
+/* main overlay container style..................................................*/
+.sapUiVkOverlay {
+  border: none;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sapVizKitNativeViewport {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  outline-offset: -1px;
+}
+.sapVizKitNativeViewport > div {
+  overflow: hidden;
+  flex: 1;
+  margin: 1px;
+}
+/* END "NativeViewport.less" */
+/* START "SceneTree.less" */
+.sapRULTSceneTree {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.sapUiVkTitle {
+  width: 100%;
+  height: 100%;
+  padding: 0.5em 0 0 0.5em;
+}
+*:focus {
+  outline: 1px dotted #24f28e;
+}
+.sapRULTSceneTree .sapMText {
+  display: inline;
+}
+/* END "SceneTree.less" */
+/* START "StepNavigation.less" */
+.sapVizKitStepNavigationStepItem {
+  border: none;
+  padding: 0.1875em;
+}
+.sapVizKitStepNavigationStepItem.selected {
+  border: 0.1875em solid;
+  padding: 0;
+  border-color: #24f28e;
+}
+.sapVizKitStepNavigationStepItem:hover:not(.selected) {
+  border: 0.1875em solid;
+  padding: 0;
+  border-color: #bfbfbf;
+}
+.sapVizKitStepNavigationPopoverStepInfo {
+  width: "20%";
+  height: "15%";
+}
+.sapVizKitStepNavigationPopoverContent {
+  padding: 1rem;
+}
+.sapVizKitStepNavigationPlayOptionsSelect {
+  width: 15em;
+}
+.sapVizKitStepNavigationProcedureList {
+  width: 30%;
+}
+.sapVizKitStepNavigationPopoverTitle {
+  padding-left: 1rem;
+  padding-right: 2rem;
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* END "StepNavigation.less" */
+/* START "FlexibleControl.less" */
+.sapUiFlexControl {
+  float: left;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.sapUiFlexCellStacked {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.sapUiFlexCellVertical {
+  display: block;
+  width: 100%;
+  position: static;
+  overflow: hidden;
+}
+/* END "FlexibleControl.less" */
+/* START "CheckEye.less" */
+.sapUiCheckEye input[type="checkbox"] {
+  display: none;
+}
+.sapUiCheckEye input[type="checkbox"] + label:before {
+  content: "\e1ea";
+  font-family: "SAP-icons";
+  font-size: 1.5rem;
+  color: #dddddd;
+}
+.sapUiCheckEye input[type="checkbox"]:checked + label:before {
+  content: "\e1e9";
+  color: #777777;
+}
+.sapUiCheckEye {
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: -1.2em;
+}
+
+/******************* FILE /Base/baseLib/sap_bluecrystal/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/sap_bluecrystal/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/ui/vk/themes/sap_bluecrystal/library.less (Version 1.34.5) *******************/
+/******************* FILE /Base/baseLib/custom1bluecrystal3/custom.less (Version 10.30.3.240577.0) *******************/
+
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/custom1bluecrystal3/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/ui/vk/themes/custom1bluecrystal3/library.less (Version 1.34.5) *******************/
+
+
+.sapThemeMetaData-UI5-sap-ui-vk{background-image: url('data:text/plain;utf-8,{"Path": "UI5.sap/ui/vk.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.5.20160414054602", "Source": "1.34.5", "Engine": "1.16.1"}}');}

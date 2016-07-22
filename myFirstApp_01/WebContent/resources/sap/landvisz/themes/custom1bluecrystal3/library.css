@@ -1,0 +1,4233 @@
+/**
+* Copyright (c) 2013 SAP AG, All Rights Reserved
+*
+* Theming Engine 1.16.1
+* data:{"Path": "UI5.sap/landvisz.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.0.20160414054607", "Source": "1.34.0", "Engine": "1.16.1"}}
+*/
+
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/base/global.less (Version 1.34.9) *******************/
+
+
+/******************* FILE /UI5/sap/landvisz/themes/base/library.less (Version 1.34.0) *******************/
+
+/* START "ActionBar.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/ActionBar.control */
+/* ============================================= */
+.sapLandviszActionBar {
+  color: #008000;
+  border: 1px solid blue;
+}
+.sapUiTbInner > * {
+  margin-right: 2px;
+}
+.sapLandviszLandscapeEntitySmallSizeActionToolBar {
+  float: Right;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 10px;
+}
+.sapLandviszLandscapeEntityRegularSmallSizeActionToolBar {
+  text-align: right;
+  margin-left: 20px;
+  width: 375px;
+}
+.sapLandviszLandscapeEntityRegularSizeActionToolBar {
+  text-align: right;
+  margin-left: 20px;
+  width: 498px;
+}
+.sapLandviszLandscapeEntityMediumSizeActionToolBar {
+  text-align: right;
+  margin-left: 20px;
+  width: 498px;
+}
+.sapLandviszLandscapeEntityLargeSizeActionToolBar {
+  width: 1580px;
+  text-align: right;
+  margin-left: 20px;
+}
+.sapLandviszActionAlignSmall {
+  height: 18px;
+  max-width: 185px;
+  cursor: pointer;
+  float: right;
+  margin-right: 5px;
+  margin-top: 7px;
+  font-size: 12px;
+  border: 1px solid #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: inset 0 1px 0 #transparent;
+  background-color: transparent;
+  color: #222222;
+}
+.sapLandviszActionAlignRegularSmall {
+  height: 20px;
+  max-width: 185px;
+  cursor: pointer;
+  float: right;
+  margin-right: 5px;
+  margin-top: 7px;
+  font-size: 14px;
+  border: 1px solid #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: inset 0 1px 0 #transparent;
+  background-color: transparent;
+  color: #222222;
+}
+.sapLandviszActionAlignRegular {
+  height: 24px;
+  max-width: 185px;
+  cursor: pointer;
+  float: right;
+  margin-right: 5px;
+  margin-top: 2px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #999999;
+  box-shadow: inset 0 1px 0 #transparent;
+  background-color: transparent;
+  color: #222222;
+}
+.sapLandviszActionAlignSmall.enable:hover,
+.sapLandviszActionAlignRegular.enable:hover,
+.sapLandviszActionAlignRegularSmall.enable:hover {
+  background-color: #007dc0;
+  color: #ffffff;
+}
+.sapLandviszActionIcon {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+.sapLandviszActionText {
+  padding-top: 4px;
+  font-family: arial, Helvetica, sans-serif;
+  float: right;
+}
+.sapLandviszActionDisable {
+  height: 100%;
+  width: 100%;
+  background-color: #bfbfbf;
+  opacity: 0.7;
+  cursor: default;
+}
+.sapLandviszMenuItem {
+  z-index: 3;
+  font-size: 14px;
+}
+.sapLandviszActionIndex {
+  z-index: 3;
+}
+.sapLandviszSmallSizeMenuItem {
+  z-index: 3;
+  font-size: 12px;
+}
+.sapLandviszMenuItemBorber {
+  border-bottom: 1px solid;
+}
+.sapUiMnuItm {
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+/* END "ActionBar.css" */
+/* START "ConnectionEntity.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/ConnectionEntity.control */
+/* ============================================= */
+.sapLandviszConnectionBox {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  cursor: pointer;
+}
+.sapLandviszSolutionBox {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+}
+.sapLandviszConnectionTextContainer {
+  opacity: 1;
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: auto;
+}
+.sapLandviszPsIcon {
+  background: #ffffff url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/24x24/ProductSystem_enable.png) no-repeat center;
+  height: 24px;
+  width: 24px;
+  float: right;
+  position: absolute;
+  margin: 2px 0;
+  top: 6px;
+}
+.sapLandviszConnectionBoxText {
+  margin: 2px 0;
+  position: absolute;
+  left: 42px;
+  top: 10px;
+}
+.sapLandviszBoxContainerLine {
+  width: 100%;
+  height: 0.3px;
+  position: absolute;
+  top: 38px;
+  border: #1B87E0 solid 1px;
+}
+.sapLandviszPversionIcon {
+  background: url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/24x24/ProductVersion_enable.png) no-repeat;
+  height: 24px;
+  width: 24px;
+  float: right;
+  position: absolute;
+  margin: 2px 0;
+  top: 10px;
+}
+.sapLandviszConnectionBoxText {
+  margin: 2px 0;
+  position: absolute;
+  left: 42px;
+  top: 10px;
+}
+.sapLandviszConnection_entity_container {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 12px;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  vertical-align: top;
+  overflow: hidden;
+}
+.sapLandviszConnection_entity_container .labelDisplay {
+  display: block;
+}
+.sapLandviszConnectionBox .labelDisplay {
+  display: none;
+}
+.sapLandviszConnection_entity_container .boxRowDisplay {
+  display: none;
+}
+.sapLandviszConnectionBox .boxRowDisplay {
+  display: block;
+}
+.sapLandviszConnection_entity_container .connectionEntity {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sapLandviszConnection_entity_container .productSystem {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #f39b02 url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/32x32/ProductSystem_enable.png) 9px 9px no-repeat;
+}
+.sapLandviszConnection_entity_container .technicalSystem {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #008fd3 url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/32x32/TechnicalSystem_enable.png) 9px 9px no-repeat;
+}
+.sapLandviszConnection_entity_container .mobileSolution {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #ffd05d url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/32x32/Solution.png) 9px 9px no-repeat;
+}
+.sapLandviszSolutionBox .mobileSolution {
+  position: absolute;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  background: #ffd05d url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/32x32/Solution.png) 9px 9px no-repeat;
+}
+.sapLandviszSolutionBox .connectionEntity {
+  position: absolute;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  background-color: #FFD05D;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sapLandviszSolutionBox .solutionRow {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  padding-top: 35px;
+  margin-left: 20px;
+  height: 50px;
+}
+.sapLandviszSolutionBox .solutionImage {
+  margin-top: 20px;
+}
+.sapLandviszSolutionBox .sapLandviszConnectionRowField {
+  margin: auto;
+  width: 100%;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandviszConnection_entity_container .connectionEntityPosition {
+  left: 236px;
+  top: 143px;
+  height: 50px;
+  width: 50px;
+  box-shadow: none;
+  cursor: auto;
+}
+.sapLandviszConnectionBox .connectionEntity {
+  position: absolute;
+  border-radius: 0;
+  cursor: pointer;
+}
+.sapLandviszConnectionBox .productSystem {
+  background-color: #F39B02;
+}
+.sapLandviszConnectionBox .technicalSystem {
+  background-color: #008FD3;
+}
+.sapLandviszConnectionBox .mobileSolution {
+  background-color: #FFD05D;
+}
+.sapLandviszConnectionRowField {
+  margin: auto;
+  width: 30.5em;
+  font-weight: bold;
+}
+.sapLandviszCalloutText {
+  float: left;
+  width: 400px;
+}
+.sapLandviszCalloutPS .sapUiCltBaseArr {
+  background-color: #F39B02;
+}
+.sapLandviszCalloutPS {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  padding: 0px 0px;
+  border: 1px solid #808080 !important;
+}
+.sapLandviszCalloutPS .productSystemPopup {
+  background-color: #F39B02 !important;
+  border-color: #F39B02;
+}
+.sapLandviszCalloutPS .technicalSystemPopup {
+  background-color: #008FD3 !important;
+  border-color: #008FD3;
+}
+.sapLandviszCalloutPS .mobileSolutionPopup {
+  background-color: #FFD05D !important;
+  border-color: #FFD05D;
+}
+.sapLandviszCalloutRowField {
+  width: 30.5em;
+}
+.sapLandviszConnectionDataNotopMargin {
+  margin-top: 0px !important;
+}
+/* END "ConnectionEntity.css" */
+/* START "Connector.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/Connector.control */
+/* ============================================= */
+/* END "Connector.css" */
+/* START "DataContainer.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/DataContainer.control */
+/* ============================================= */
+.sapLandviszDataContainer {
+  color: #008000;
+  border: 1px solid blue;
+  width: 14.9em;
+  background-color: white;
+}
+.sapLandviszDataContainerSize {
+  background: #e6e6e6;
+  font-weight: normal;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  vertical-align: center;
+  cursor: pointer;
+  padding-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+.sapLandviszDataContainerSmallSize {
+  height: 18px;
+  font-size: 12px;
+}
+.sapLandviszDataContainerRegularSmallSize {
+  height: 20px;
+}
+.sapLandviszDataContainerRegularSize {
+  height: 20px;
+}
+.sapLandviszDataContainerMediumSize {
+  height: 22px;
+}
+.sapLandviszDataContainerLargeSize {
+  height: 22px;
+}
+.sapLandviszSelected {
+  background: white;
+  font-weight: bold;
+  border-top: 2px solid #008fd3;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+}
+.sapLandviszSelectedTechnicalSystem {
+  background: white;
+  font-weight: bold;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #008fd3 !important;
+}
+.sapLandviszSelectedProductSystem {
+  background: white;
+  font-weight: bold;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #f39b02 !important;
+}
+.sapLandviszSelectedSapComponent {
+  background: white;
+  font-weight: bold;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #666666 !important;
+}
+.sapLandviszUnselected {
+  border: 1px solid #d3d3d3;
+  font-weight: normal;
+}
+.sapLandviszUnselected:hover {
+  border: 1px solid #d3d3d3;
+  font-weight: normal;
+  background: #d9d9d9;
+}
+/* END "DataContainer.css" */
+/* START "DeploymentType.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/DeploymentType.control */
+/* ============================================= */
+.sapLandviszIconBorder {
+  border: 1px solid #999999;
+}
+/* END "DeploymentType.css" */
+/* START "EntityAction.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/EntityAction.control */
+/* ============================================= */
+.sapLandviszIcon_button {
+  cursor: pointer;
+  float: right;
+  margin: 8px 2px 2px 6px;
+}
+.sapLandviszIcon_buttonSmall {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  float: right;
+  margin: 10px 2px 2px;
+}
+/* END "EntityAction.css" */
+/* START "EntityCustomAction.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz.internal/EntityCustomAction.control */
+/* ============================================= */
+/* END "EntityCustomAction.css" */
+/* START "HeaderList.css" */
+/* ============================================= */
+/* CSS for control internal/HeaderList.control */
+/* ============================================= */
+.landviszHeaderList {
+  color: #008000;
+  border: 1px solid blue;
+}
+.landviszHeaderListBtnRegularSize {
+  height: 12px;
+}
+.landviszHeaderListBtnMidiumSize {
+  height: 16px;
+}
+.landviszHeaderListBtnLargeSize {
+  height: 20px;
+}
+.sapLandviszLandscapeEntityRegularSize.activeHeaderButton {
+  background-color: #00451d;
+  border-color: #00451d;
+}
+.sapLandviszMiniNavigationSelected {
+  background-color: #ffffff;
+  height: 11px;
+  border: 1px solid #bfbfbf;
+}
+.sapLandviszTechnicalSystem {
+  border-top: 2px solid #008fd3 !important;
+}
+.sapLandviszProductSystem {
+  border-top: 2px solid #f39b02 !important;
+}
+.sapLandviszSapComponent {
+  border-top: 2px solid #666666 !important;
+}
+.sapLandviszMiniNavigationNormal {
+  height: 11px;
+  background-color: #bfbfbf;
+  border: 1px solid #e5e5e5;
+}
+.sapLandviszMiniNavigationInDisplay {
+  height: 11px;
+  background-color: #e5e5e5 !important;
+  border: 1px solid #bfbfbf;
+  margin-top: 1px;
+}
+/* END "HeaderList.css" */
+/* START "IdentificationBar.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/IdentificationBar.control */
+/*
+/* Size css */
+.sapLandVisIdentificationBarSize {
+  float: left;
+  cursor: default;
+  color: #ffffff;
+  background-color: #008FD3;
+  font-size: 12px;
+}
+/*Small Size Entities*/
+.sapLandVisIdentificationBarSmallSize {
+  width: 6.1em;
+  height: 13em;
+}
+.sapLandVisIdentificationBarSmallSize .entityIcon {
+  margin: 1em;
+  background-color: #FFFFFF;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .img {
+  margin: 6px 0px 0px 8px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .IdentificationText {
+  height: 1.5em;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .qualifierIcon {
+  margin: 15px 12.5px 0px 17px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .qualifierText {
+  height: 13.333333333333334px;
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .sapLandVisProdSysEntity {
+  background-color: #F39B02;
+  border: 1px solid #F39B02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .solutionTypeIcon {
+  height: 2em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*RegularSmall Size Entities */
+.sapLandVisIdentificationBarRegularSmallSize {
+  width: 7em;
+  height: 19.5em;
+}
+.sapLandVisIdentificationBarRegularSmallSize .entityIcon {
+  margin: 1.1em;
+  background-color: #FFFFFF;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .img {
+  margin: 3px 0px 0px 6px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .IdentificationText {
+  height: 3em;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .qualifierIcon {
+  margin: 45px 12.5px 0px 18px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .qualifierText {
+  height: 13.333333333333334px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .sapLandVisProdSysEntity {
+  background-color: #F39B02;
+  border: 1px solid #F39B02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .solutionTypeIcon {
+  height: 4em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*Regular Size Entities*/
+.sapLandVisIdentificationBarRegularSize {
+  width: 8.333em;
+  height: 21.58em;
+}
+.sapLandVisIdentificationBarRegularSize .entityIcon {
+  margin: 1.5em;
+  background-color: #FFFFFF;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .img {
+  margin: 4px 0px 0px 9.5px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .IdentificationText {
+  height: 5em;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .qualifierIcon {
+  margin: 15px 12.5px 0px 30px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .qualifierText {
+  height: 13.333333333333334px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .sapLandVisProdSysEntity {
+  background-color: #F39B02;
+  border: 1px solid #F39B02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .solutionTypeIcon {
+  height: 6.8em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*Medium Size Entities*/
+.sapLandVisIdentificationBarMediumSize {
+  width: 8.4em;
+  height: 25em;
+}
+.sapLandVisIdentificationBarMediumSize .entityIcon {
+  margin: 18px 15px 12.5px;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .img {
+  margin: 8px 4px 4px 11px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .IdentificationText {
+  height: 7.5em;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .qualifierIcon {
+  margin-left: 30px;
+  margin-right: 15px;
+  margin-top: 14px;
+  margin: 14px 15px 0px 30px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .qualifierText {
+  height: 13.3333px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .sapLandVisProdSysEntity {
+  background-color: #F39B02;
+  border: 1px solid #F39B02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .solutionTypeIcon {
+  height: 10em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*Large Entites*/
+.sapLandVisIdentificationBarLargeSize {
+  width: 8.4em;
+  height: 38em;
+}
+.sapLandVisIdentificationBarLargeSize .entityIcon {
+  margin: 18px 15px 12.5px;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .img {
+  margin: 8px 4px 4px 11px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .IdentificationText {
+  height: 17.5em;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .qualifierIcon {
+  margin: 7.5px 15px 0px 30px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .qualifierText {
+  height: 13.3333px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .sapLandVisProdSysEntity {
+  background-color: #F39B02;
+  border: 1px solid #F39B02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .solutionTypeIcon {
+  height: 23em;
+  margin-left: 25px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize {
+  width: 8.4em;
+}
+.sapLandVisIdentificationBarMaximizeSize .entityIcon {
+  margin: 18px 15px 12.5px;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .img {
+  margin: 8px 4px 4px 11px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .IdentificationText {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .qualifierIcon {
+  margin: 7.5px 15px 0px 30px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .qualifierText {
+  height: 13.3333px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+.sapLandVisIdentificationBarMaximizeSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .sapLandVisProdSysEntity {
+  background-color: #F39B02;
+  border: 1px solid #F39B02;
+}
+.sapLandviszCursor {
+  cursor: default;
+}
+/* END "IdentificationBar.css" */
+/* START "LandscapeEntity.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LandscapeEntity.control */
+/* ============================================= */
+.sapLandviszLandscapeEntity {
+  font-size: 12px;
+  z-index: 1;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszStatusSmallSize {
+  width: 23.1em;
+  height: 16.5em;
+  float: left;
+}
+.sapLandviszStatusRegularSmallSize {
+  width: 33.7em;
+  float: left;
+  height: 22.3em;
+}
+.sapLandviszStatusRegularSize {
+  width: 38.7em;
+  height: 24.5em;
+  float: left;
+}
+.sapLandviszStatusMediumSize {
+  width: 43.5em;
+  height: 28em;
+  float: left;
+}
+.sapLandviszStatusLargeSize {
+  height: 41.5em;
+  float: left;
+  width: 64.5em;
+}
+.sapLandviszActionBarSizeCommon {
+  border: 0px solid #B8C2CC;
+  float: Left;
+  cursor: pointer;
+}
+.sapLandviszActionBarSmallSize {
+  width: 21em;
+}
+.sapLandviszActionBarRegularSmallSize {
+  width: 31.5em;
+}
+.sapLandviszActionBarRegularSize {
+  width: 36.5em;
+}
+.sapLandviszActionBarMediumSize {
+  width: 41em;
+}
+.sapLandviszActionBarLargeSize {
+  width: 62em;
+}
+.sapLandviszSingleLabelHeaderWidth {
+  width: 100%;
+  color: #000;
+  margin-top: 5px;
+}
+.sapLandviszAllActionLayout {
+  float: right;
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  height: 32px;
+  cursor: default;
+}
+.sapLandviszActionLayout {
+  float: right;
+  text-align: center;
+  padding-top: 2px;
+  margin-right: 0px;
+}
+.sapLandviszSmallSizesPropertySection {
+  height: 9.4em;
+  overflow: auto;
+  width: 14.8em;
+  cursor: default;
+}
+.sapLandviszRegularSmallSizesPropertySection {
+  height: 16em;
+  overflow: auto;
+  width: 24.5em;
+  cursor: default;
+}
+.sapLandviszRegularSmallSizesPropertySectionSmv {
+  height: 17.2em !important;
+}
+.sapLandviszRegularSizesPropertySection {
+  height: 18.15em;
+  overflow: auto;
+  width: 28.2em;
+  cursor: default;
+}
+.sapLandviszRegularSizesPropertySectionSmv {
+  height: 19.25em !important;
+}
+.sapLandviszMediumSizesPropertySection {
+  height: 21.3em;
+  overflow: auto;
+  width: 32.6em;
+  cursor: default;
+}
+.sapLandviszLargeSizesPropertySection {
+  height: 34em;
+  overflow: auto;
+  width: 53.6em;
+  cursor: default;
+}
+.sapLandviszSmallSizesPropertyDialog {
+  height: 10em;
+  overflow: auto;
+  width: 14.1em;
+  background-color: #ffffff;
+}
+.sapLandviszMediumSizesPropertyDialog {
+  height: 21.8em;
+  overflow: auto;
+  width: 19em;
+  background-color: #ffffff;
+}
+.sapLandviszLargeSizesPropertyDialog {
+  height: 61.8em;
+  overflow: auto;
+  width: 59em;
+  background-color: #ffffff;
+}
+/*
+.sapLandviszMiniNavigationButtonNormal {background-color: #e2e2e2;
+height: 13px;
+}
+*/
+.sapLandviszMiniNavigationButtonSelected {
+  background-color: #F7F7F8;
+  height: 13px;
+  border: 1px solid;
+}
+/*Small Size*/
+.sapLandviszLandscapeEntitySmallSize {
+  border: 1px solid #B8C2CC;
+  height: 13em;
+  float: left;
+  cursor: pointer;
+  width: 21em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntitySmallSize .sapUiUx3NavBarItem {
+  font-size: 10px;
+}
+.sapLandviszLandscapeEntitySmallSize .sapUiUx3NavBarItemSel > a {
+  font-size: 11px;
+  padding: 0 5px 0;
+}
+.sapLandviszLandscapeEntitySmallSize.buttonSize {
+  height: 12px;
+}
+/*RegularSmall Size */
+.sapLandviszLandscapeEntityRegularSmallSize {
+  border: 1px solid #B8C2CC;
+  height: 19.5em;
+  float: left;
+  cursor: pointer;
+  width: 31.5em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityRegularSmallSize .sapUiUx3NavBarItem {
+  font-size: 10px;
+}
+.sapLandviszLandscapeEntityRegularSmallSize .sapUiUx3NavBarItemSel > a {
+  font-size: 11px;
+  padding: 0 5px 0;
+}
+.sapLandviszLandscapeEntityRegularSmallSize.buttonSize {
+  height: 12px;
+}
+/*Regular Size*/
+.sapLandviszLandscapeEntityRegularSize {
+  border: 1px solid #B8C2CC;
+  height: 21.58em;
+  float: left;
+  cursor: pointer;
+  width: 36.5em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityRegularSize .sapUiUx3NavBarItem {
+  font-size: 10px;
+}
+.sapLandviszLandscapeEntityRegularSize .sapUiUx3NavBarItemSel > a {
+  font-size: 11px;
+  padding: 0 5px 0;
+}
+.sapLandviszLandscapeEntityRegularSize.buttonSize {
+  height: 12px;
+}
+/*Medium Size*/
+.sapLandviszLandscapeEntityMediumSize {
+  border: 1px solid #B8C2CC;
+  height: 25em;
+  float: left;
+  cursor: pointer;
+  width: 41em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityMediumSize .sapUiUx3NavBarItem {
+  font-size: 14px;
+}
+.sapLandviszLandscapeEntityMediumSize .sapUiUx3NavBarItemSel > a {
+  font-size: 16px;
+}
+.sapLandviszLandscapeEntityMediumSize.buttonSize {
+  height: 13px;
+}
+.sapLandviszLandscapeEntityMediumSize.selectBackground {
+  background-color: #F7F7F8;
+}
+.sapLandviszLandscapeEntityMediumSize.normalBackground {
+  background-color: #e2e2e2;
+}
+/*Large Size*/
+.sapLandviszLandscapeEntityLargeSize {
+  border: 1px solid #B8C2CC;
+  width: 62em;
+  height: 38em;
+  float: left;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityLargeSize .sapUiUx3NavBarItem {
+  font-size: 16px;
+}
+.sapLandviszLandscapeEntityLargeSize .sapUiUx3NavBarItemSel > a {
+  font-size: 18px;
+}
+.sapLandviszLandscapeEntityLargeSize.sapLandviszMiniNavigationButtonSelected {
+  background-color: #F7F7F8;
+}
+.sapLandviszLandscapeEntityLargeSize.buttonSize {
+  height: 14px;
+}
+.sapUiUx3PropertyVisible {
+  visibility: visible;
+}
+.sapUiUx3PropertyHidden {
+  visibility: hidden;
+}
+.sapLandviszLandscapeEntityNavIcon {
+  width: 17px;
+  background: #e6e6e6;
+  font-weight: normal;
+  cursor: pointer;
+  border: 1px solid #d3d3d3;
+  padding: 4px 2px;
+}
+.sapLandviszExcludeFromLayout {
+  width: 0px;
+  height: 0px;
+}
+.sapLandviszMiniNavigationVisible {
+  background-color: #e5e5e5;
+  width: 100%;
+  display: block;
+  visibility: visible;
+}
+.sapLandviszMiniNavigationHidden {
+  background-color: #e5e5e5;
+  width: 100%;
+  visibility: hidden;
+  display: none;
+}
+.sapLandviszSMVContainerRegularSmall {
+  display: block;
+  width: 600px;
+  height: 500px;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+}
+.sapLandviszSMVContainerRegular {
+  display: block;
+  width: 600px;
+  height: 500px;
+  top: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszSMVContainerMedium {
+  display: block;
+  width: 600px;
+  height: 500px;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+}
+.sapLandviszLandscapeEntityRegularSmallSize .singleHeader {
+  width: 21em;
+  text-align: center;
+  vertical-align: middle;
+  height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  height: 28px;
+  background-color: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszLandscapeEntityMediumSize .singleHeader {
+  border-bottom: 2px solid #007dc0;
+  width: 28em;
+  text-align: center;
+  vertical-align: middle;
+  height: 28px;
+  font-weight: bold;
+  font-size: 14px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszLandscapeEntityRegularSize .singleHeader {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 14px;
+  height: 28px;
+  background-color: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszSingleHeaderTs {
+  border-top: 2px solid #008fd3 !important;
+  border-right: 2px solid #008fd3 !important;
+  border-left: 2px solid #008fd3 !important;
+}
+.sapLandviszSingleHeaderPs {
+  border-top: 2px solid #f39b02 !important;
+  border-right: 2px solid #f39b02 !important;
+  border-left: 2px solid #f39b02 !important;
+}
+.sapLandviszLandscapeEntityRegularSize .singleHeaderExplodeView {
+  /*background-color: #ccc !important;*/
+}
+.sapLandviszDisplayNone {
+  display: none;
+}
+.sapLandviszDisplayBlock {
+  display: block;
+}
+.sapLandviszMaximizePropertySection {
+  overflow: auto;
+  width: 100%;
+  cursor: default;
+}
+.sapLandviszActionBarMaximizeSize {
+  border: 0px solid #B8C2CC;
+  float: Left;
+  cursor: pointer;
+}
+.sapLandviszAllActionLayoutMaximize {
+  font-size: 14px;
+  height: 32px;
+  text-align: right;
+  width: 100%;
+  cursor: default;
+}
+.sapLandviszStatusMaximizeSize {
+  height: 100%;
+  float: left;
+  width: 100%;
+}
+.sapLandviszLandscapeEntityMaximizedSize {
+  border: 1px solid #B8C2CC;
+  float: left;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszVlayoutOverLay {
+  overflow: auto;
+  width: 100%;
+  background-color: #f39b02;
+  max-height: 100%;
+  z-index: 4;
+  opacity: 0.9;
+}
+.sapLandviszVlayoutOverLay .overlayRow {
+  border: 0px;
+  z-index: 100;
+}
+.sapLandviszTechnicalSystem {
+  border-top: 2px solid #008fd3 !important;
+  border-left: 1px solid #aaaaaa !important;
+  border-right: 1px solid #aaaaaa !important;
+}
+.sapLandviszProductSystem {
+  border-top: 2px solid #f39b02 !important;
+  border-left: 1px solid #aaaaaa !important;
+  border-right: 1px solid #aaaaaa !important;
+}
+.sapLandviszSapComponent {
+  border-top: 2px solid #666666 !important;
+  border-left: 1px solid #aaaaaa !important;
+  border-right: 1px solid #aaaaaa !important;
+}
+/* END "LandscapeGlobal.css" */
+/* START "LandscapeObject.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LandscapeObject.control */
+/* ============================================= */
+.sapLandviszLandscapeObject {
+  color: #008000;
+  border: 1px solid blue;
+}
+/* END "LandscapeObject.css" */
+/* START "LandscapeViewer.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LandscapeViewer.control */
+/* ============================================= */
+.sapLandviszSolutionViewContainer {
+  position: relative;
+  overflow: auto;
+  top: 32px;
+}
+.sapLandviszBoxViewBorderContainer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: 1;
+  position: relative;
+  border: 1px solid #999999;
+  margin: auto;
+}
+.sapLandviszViewer_container_header {
+  height: 28px;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bolder;
+  cursor: default;
+  border: 1px solid #aaa;
+  background: #cccccc url(../../../../../UI5/sap/landvisz/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+  color: #222;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszViewMainContainer {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  position: relative;
+}
+.sapLandviszViews {
+  position: absolute;
+  top: 0;
+}
+.sapLandviszView {
+  float: left;
+  font-size: 14px;
+}
+.sapLandviszView_text {
+  float: right;
+  padding-left: 2px;
+  margin-left: 2px;
+  font-size: 14px;
+  height: 26px;
+}
+.sapLandviszSolution_view_text {
+  float: right;
+  width: 165px;
+  margin-left: 2px;
+  font-size: 14px;
+  height: 28px;
+}
+.sapLandviszOption_view_text {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.sapLandviszView_icon {
+  margin-left: 5px;
+}
+.sapLandviszCloseButton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  margin: 4px 2px;
+}
+.sapLandviszBoxContainerLevelHeader {
+  position: absolute;
+  background-color: #cccccc;
+}
+.sapLandviszLevelLabel {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  white-space: pre-line;
+  display: block;
+  color: #888888;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.MotionBlur(strength=0), progid:DXImageTransform.Microsoft.BasicImage(rotation = 3 , xray = 1)';
+}
+.sapLandviszDependencyPath {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  margin: 4px 30px;
+  font-weight: bold;
+  font-size: 12px;
+  max-width: 40%;
+  text-align: right;
+}
+.sapLandviszOptionContainer {
+  top: 28px;
+  height: 51px;
+  position: relative;
+  margin-top: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.sapLandviszEntityOptionContainer {
+  height: 40px;
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.sapLandviszDeploymentTypeContainer {
+  position: absolute;
+  height: 40px;
+  overflow: hidden;
+}
+.sapLandviszDependencyPathLabel {
+  width: 100%;
+  font-size: 12px;
+}
+.sapLandviszactionIndex {
+  z-index: 3;
+}
+.sapLandviszClv_container_frame_navigation {
+  display: none;
+  width: 20%;
+  height: 22%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  z-index: 2003;
+  background-color: transparent;
+  border: 2px solid rgba(44, 44, 44, 0.92);
+  cursor: move;
+  background-color: #e5e5e5;
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  height: 16px;
+  width: 32px;
+  padding: 0 8px;
+  margin-left: -16px;
+  top: -16px;
+  left: 50%;
+  overflow: hidden;
+  bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgba(44, 44, 44, 0.92);
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .navigationBarButton {
+  width: 16px;
+  height: 16px;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowUp {
+  background: url("../../../../../UI5/sap/landvisz/themes/base/img/framework/16x16/ArrowBar_up.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowUp:hover,
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowUp:active {
+  background: url("../../../../../UI5/sap/landvisz/themes/base/img/framework/16x16/ArrowBar_up_hover.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowDown {
+  background: url("../../../../../UI5/sap/landvisz/themes/base/img/framework/16x16/ArrowBar_down.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowDown:hover,
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowDown:active {
+  background: url("../../../../../UI5/sap/landvisz/themes/base/img/framework/16x16/ArrowBar_down_hover.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationNavigator {
+  background: grey;
+  position: relative;
+  opacity: .65;
+  cursor: url("../../../../../UI5/sap/landvisz/themes/base/img/framework/24x24/drag_n_drop.cur"), pointer;
+}
+.sapLandviszDisplayBlock {
+  display: block;
+}
+.sapLandviszDisplayNone {
+  display: none;
+}
+.sapLandviszImg {
+  margin-bottom: 2px;
+}
+.sapLandviszBtnDisable {
+  color: #999999 !important;
+  opacity: .5 !important;
+  background-color: transparent !important;
+  cursor: default !important;
+}
+.sapLandviszOptionLabel {
+  height: 35px;
+  margin: 0 10px;
+  padding-top: 7px;
+  color: #00669c;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* END "LandscapeViewer.css" */
+/* START "LinearRowField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LinearRowField.control */
+/* ============================================= */
+.sapLandviszLinearRowField {
+  color: black;
+  border: 0px solid black;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.sapLandviszLinearRowFieldSize {
+  border-bottom: 1px solid #999999;
+  font-family: Verdana, Arial, sans-serif;
+}
+.sapLandviszLinearRowFieldSmallSize {
+  width: 98.5%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize {
+  width: 98.8%;
+}
+.sapLandviszLinearRowFieldRegularSize {
+  width: 99%;
+}
+.sapLandviszLinearRowFieldMediumSize {
+  width: 99%;
+}
+.sapLandviszLinearRowFieldLargeSize {
+  width: 99%;
+}
+.sapLandviszLinearRowFieldDataCommon {
+  color: black !important;
+  margin: 5px 0px 5px 0px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldSmallSize .dataValue {
+  font-size: 12px;
+  width: 53%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataLabel {
+  font-size: 12px;
+  width: 80%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataValue {
+  font-size: 12px;
+  width: 80%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataLabelwithRightIcon {
+  font-size: 12px;
+  width: 67.5%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataValuewithRightIcon {
+  font-size: 12px;
+  width: 67.5%;
+}
+.sapLandviszLinearRowFieldSmallSize .dataLabel {
+  border: 0px solid black;
+  font-weight: bold;
+  font-size: 12px;
+  width: 35%;
+}
+.sapLandviszLinearRowFieldSmallSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+  width: 4%;
+}
+/* Regular small*/
+.sapLandviszLinearRowFieldRegularSmallSize .dataValue {
+  font-size: 12px;
+  width: 53%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataLabel {
+  font-size: 12px;
+  width: 80%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataValue {
+  font-size: 12px;
+  width: 80%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataLabelwithRightIcon {
+  font-size: 12px;
+  width: 67.5%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataValuewithRightIcon {
+  font-size: 14px;
+  width: 62.5%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .dataLabel {
+  border: 0px solid black;
+  font-weight: bold;
+  font-size: 13px;
+  width: 36%;
+  overflow: visible;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+  width: 4%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataLabelwithRightIcon {
+  font-size: 13px;
+  width: 72.5%;
+}
+/* Regular*/
+.sapLandviszLinearRowFieldRegularSize .dataValue {
+  font-size: 14px;
+  width: 55%;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataLabel {
+  font-size: 14px;
+  width: 89%;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataValue {
+  font-size: 14px;
+  width: 86%;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataLabelwithRightIcon {
+  font-size: 14px;
+  width: 77.5%;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataValuewithRightIcon {
+  font-size: 14px;
+  width: 77.5%;
+}
+.sapLandviszLinearRowFieldRegularSize .dataLabel {
+  border: 0px solid black;
+  font-weight: bold;
+  font-size: 14px;
+  width: 37%;
+}
+.sapLandviszLinearRowFieldRegularSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+  width: 4%;
+}
+/*Medium*/
+.sapLandviszLinearRowFieldMediumSize .dataValue {
+  font-size: 14px;
+  width: 56%;
+}
+.sapLandviszLinearRowFieldMediumSize .dataLabel {
+  border: 0px solid black;
+  font-weight: bold;
+  font-size: 14.5px;
+  width: 40%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataLabel {
+  font-size: 14px;
+  width: 91%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataValue {
+  font-size: 14.5px;
+  width: 91%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataLabelwithRightIcon {
+  font-size: 14px;
+  width: 84.5%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataValuewithRightIcon {
+  font-size: 14.5px;
+  width: 84.5%;
+}
+.sapLandviszLinearRowFieldMediumSize .dataSeperator {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.sapLandviszLinearRowFieldLargeSize .dataValue {
+  font-size: 16px;
+  width: 56%;
+}
+.sapLandviszLinearRowFieldLargeSize .dataLabel {
+  border: 0px solid black;
+  font-weight: bold;
+  font-size: 16.5px;
+  margin-top: 5px;
+  width: 40%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataLabel {
+  font-size: 16px;
+  width: 92%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataValue {
+  font-size: 16px;
+  width: 92%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataLabelwithRightIcon {
+  font-size: 16px;
+  width: 91%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataValuewithRightIcon {
+  font-size: 16px;
+  width: 91%;
+}
+.sapLandviszLinearRowFieldLargeSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.sapLandviszWarningBG {
+  background-color: #FFFCB5;
+}
+.sapLandviszRightIcon {
+  float: right;
+}
+/* END "LinearRowField.css" */
+/* START "LongTextField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LongTextRenderer.control */
+/* ============================================= */
+.sapLandviszLongTextSizeCommon {
+  color: black;
+  width: 97%;
+  margin: 5px 0px 5px 5px;
+  font-family: Verdana, Arial, sans-serif;
+}
+.sapLandviszLongTextSmallSize {
+  font-size: 12px;
+  height: 98%;
+}
+.sapLandviszLongTextRegularSmallSize {
+  font-size: 13px;
+  height: 98%;
+}
+.sapLandviszLongTextRegularSize {
+  font-size: 13px;
+  height: 98%;
+}
+.sapLandviszLongTextMediumSize {
+  font-size: 14px;
+  height: 96%;
+}
+.sapLandviszLongTextLargeSize {
+  font-size: 14px;
+  height: 96%;
+}
+/* END "LongTextField.css" */
+/* START "ModelingStatus.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/ModelingStatus.control */
+/* ============================================= */
+.sapLandviszStatusSectionSmallSize {
+  width: 16px;
+  float: left;
+  margin-top: 32px;
+  cursor: pointer;
+}
+.sapLandviszStatusSectionAllSize {
+  width: 24px;
+  float: left;
+  margin-top: 32px;
+  cursor: pointer;
+}
+.stateIconClass {
+  border: 1px solid #999999 !important;
+  cursor: default;
+}
+/* END "ModelingStatus.css" */
+/* START "NestedRowField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/NestedRowField.control */
+/* ============================================= */
+.sapLandviszNestedRowField {
+  color: #008000;
+  border: 1px solid blue;
+}
+.sapLandviszNestedRowFieldCommon {
+  color: black !important;
+  margin: 5px 0px 5px 0px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszNestedRowFieldSmallSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldSmallSize .dataLabel {
+  font-size: 12px;
+  width: 78%;
+}
+.sapLandviszNestedRowFieldSmallSize .dataValue {
+  font-size: 12px;
+  width: 60%;
+}
+.sapLandviszNestedRowFieldSmallSize .rowFieldinNestedRow {
+  margin-left: 15px;
+  width: 92%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+}
+/*RegularSmall*/
+.sapLandviszNestedRowFieldRegularSmallSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldRegularSmallSize .dataLabel {
+  font-size: 14px;
+  width: 82%;
+}
+.sapLandviszNestedRowFieldRegularSmallSize .dataValue {
+  border: 0px solid black;
+  font-size: 14px;
+  width: 70%;
+}
+.sapLandviszNestedRowFieldRegularSmallSize .rowFieldinNestedRow {
+  padding-left: 25px;
+  width: 96%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/*Regular*/
+.sapLandviszNestedRowFieldRegularSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldRegularSize .dataLabel {
+  font-size: 14px;
+  width: 84%;
+}
+.sapLandviszNestedRowFieldRegularSize .dataValue {
+  border: 0px solid black;
+  font-size: 14px;
+  width: 76%;
+}
+.sapLandviszNestedRowFieldRegularSize .rowFieldinNestedRow {
+  padding-left: 25px;
+  width: 99%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* Medium*/
+.sapLandviszNestedRowFieldMediumSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldMediumSize .dataLabel {
+  font-size: 14px;
+  width: 90%;
+}
+.sapLandviszNestedRowFieldMediumSize .dataValue {
+  border: 0px solid black;
+  font-size: 14px;
+  width: 83%;
+}
+.sapLandviszNestedRowFieldMediumSize .rowFieldinNestedRow {
+  margin-left: 25px;
+  width: 92%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+}
+.sapLandviszNestedRowFieldLargeSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldLargeSize .dataLabel {
+  font-size: 16px;
+  width: 91%;
+}
+.sapLandviszNestedRowFieldLargeSize .dataValue {
+  border: 0px solid black;
+  font-size: 16px;
+  width: 83%;
+}
+.sapLandviszNestedRowFieldLargeSize .rowFieldinNestedRow {
+  margin-left: 30px;
+  width: 94%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+}
+.sapLandviszDataLabelIcon {
+  margin-left: 5px;
+}
+.sapLandviszDataValueIcon {
+  margin-left: 35px;
+}
+.sapLandviszDataSection {
+  width: 100%;
+}
+/* END "NestedRowField.css" */
+/* START "Option.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/Option.control */
+/* ============================================= */
+/* END "Option.css" */
+/* START "OptionEntity.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/OptionEntity.control */
+/* ============================================= */
+.sapLandviszOptionButton {
+  width: 35px;
+  height: 35px;
+  font-size: 22px;
+  text-align: center;
+  margin-right: 10px;
+  border: 1px solid;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszOptionButton .viewText {
+  font-size: 22px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 34px;
+  margin-left: 2px;
+}
+.sapLandviszOptionButton .viewBtn {
+  vertical-align: middle;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  cursor: pointer;
+}
+.sapLandviszOptionButton .viewBtn > label {
+  cursor: pointer;
+}
+/* END "OptionEntity.css" */
+/* START "OptionSource.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/OptionSource.control */
+/* ============================================= */
+.sapLandviszBoxViewContainer {
+  display: block;
+  float: center;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  border: 1px solid black;
+}
+/* END "OptionSource.css" */
+/* START "SingleDataContainer.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/SingleDataContainer.control */
+/* ============================================= */
+.sapLandviszSvmSectorFreeStyle {
+  padding: 0;
+  display: block;
+  font-family: Arial, serif;
+  font-size: 14px;
+  overflow: hidden;
+  loat: left;
+}
+.sapLandviszSMVContainerAllSizes {
+  float: left;
+  margin: 33px 0px 0px 30px;
+  padding-left: 32px;
+  font-family: Arial, serif;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #B8C2CC;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+}
+.sapLandviszSMVContainerRegularSmall .svmContainer {
+  font-size: 12px;
+  height: 21.2em;
+  width: 28.1em;
+}
+.sapLandviszSMVContainerMedium .svmContainer {
+  font-size: 14px;
+  height: 21.3em;
+  width: 28em;
+}
+.sapLandviszSMVContainerRegular .svmContainer {
+  font-size: 12px;
+  height: 21.7em;
+  width: 28.1em;
+}
+.sapLandviszSvmDataContainer {
+  width: 100%;
+  height: 19em;
+  overflow: auto;
+}
+.sapLandviszSvmHeaderLabel {
+  margin-top: 5px;
+  max-width: 93%;
+  font-size: 14px;
+  color: #000000;
+}
+.sapLandviszSvmHeader {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  height: 28px;
+  background-color: #ccc;
+}
+.sapLandviszSvmSectorCloseBtn {
+  background: url(../../../../../UI5/sap/landvisz/themes/base/img/framework/24x24/closesection_enable_dark.png) no-repeat;
+  height: 24px;
+  width: 24px;
+  float: right;
+  margin: 2px 0;
+  cursor: pointer;
+}
+/* END "SingleDataContainer.css" */
+/* START "TreeField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/TreeField.control */
+/* ============================================= */
+.sapLandviszTreeField {
+  color: #008000;
+  border: 1px solid blue;
+}
+.sapLandVisTreeFieldSmallSize {
+  width: 14.7em;
+  height: 8.75em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.sapLandVisTreeFieldSmallSize.landscapetree {
+  width: 14.9em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldRegularSmallSize {
+  width: 18em;
+  height: 10.5em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.sapLandVisTreeFieldRegularSmallSize.landscapetree {
+  width: 19em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldRegularSize {
+  width: 20em;
+  height: 13em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.sapLandVisTreeFieldRegularSize.landscapetree {
+  width: 22em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldMediumSize {
+  width: 27.4em;
+  height: 16.8em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.sapLandVisTreeFieldMediumSize.landscapetree {
+  width: 28.6em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldLargeSize {
+  height: 24.8em;
+  width: 40em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.sapLandVisTreeFieldLargeSize.landscapetree {
+  width: 53em;
+  height: 100%;
+  float: left;
+}
+
+/******************* FILE /Base/baseLib/sap_bluecrystal/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/sap_bluecrystal/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/landvisz/themes/sap_bluecrystal/library.less (Version 1.34.0) *******************/
+
+/* START "ActionBar.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/ActionBar.control */
+/* ============================================= */
+.sapLandviszActionBar {
+  color: #008000;
+  border: 1px solid #007cc0;
+}
+.sapUiTbInner > * {
+  margin-right: 2px;
+}
+.sapLandviszLandscapeEntitySmallSizeActionToolBar {
+  float: Right;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 10px;
+}
+.sapLandviszLandscapeEntityRegularSmallSizeActionToolBar {
+  text-align: right;
+  margin-left: 20px;
+  width: 375px;
+}
+.sapLandviszLandscapeEntityRegularSizeActionToolBar {
+  text-align: right;
+  margin-left: 20px;
+  width: 498px;
+}
+.sapLandviszLandscapeEntityMediumSizeActionToolBar {
+  text-align: right;
+  margin-left: 20px;
+  width: 498px;
+}
+.sapLandviszLandscapeEntityLargeSizeActionToolBar {
+  width: 1580px;
+  text-align: right;
+  margin-left: 20px;
+}
+.sapLandviszActionAlignSmall {
+  height: 22px;
+  max-width: 185px;
+  cursor: pointer;
+  float: right;
+  margin-left: 5px;
+  margin-top: 7px;
+  font-size: 12px;
+  border: 1px solid #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #000000;
+}
+.sapLandviszActionAlignRegularSmall {
+  height: 20px;
+  max-width: 185px;
+  cursor: pointer;
+  float: right;
+  margin-right: 5px;
+  margin-top: 7px;
+  font-size: 14px;
+  border: 1px solid #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #000000;
+}
+.sapLandviszActionAlignRegular {
+  height: 24px;
+  max-width: 185px;
+  cursor: pointer;
+  float: right;
+  margin-right: 5px;
+  margin-top: 2px;
+  font-size: 14px;
+  border: 1px solid #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #333333;
+}
+.sapLandviszActionAlignSmall.enable:hover,
+.sapLandviszActionAlignRegular.enable:hover,
+.sapLandviszActionAlignRegularSmall.enable:hover {
+  background-color: #eaeaea;
+}
+.sapLandviszActionIcon {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+.sapLandviszActionText {
+  padding-top: 4px;
+  font-family: arial, Helvetica, sans-serif;
+  float: right;
+}
+.sapLandviszActionDisable {
+  height: 100%;
+  width: 100%;
+  background-color: #bfbfbf;
+  opacity: 0.7;
+  cursor: default;
+}
+.sapLandviszMenuItem {
+  z-index: 3;
+  font-size: 14px;
+}
+.sapLandviszActionIndex {
+  z-index: 3;
+}
+.sapLandviszSmallSizeMenuItem {
+  z-index: 3;
+  font-size: 12px;
+}
+.sapLandviszMenuItemBorber {
+  border-bottom: 1px solid;
+}
+.sapUiMnuItm {
+  border-bottom: 1px solid #444444;
+  cursor: pointer;
+}
+/* END "ActionBar.css" */
+/* START "ConnectionEntity.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/ConnectionEntity.control */
+/* ============================================= */
+.sapLandviszConnectionBox {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  cursor: pointer;
+}
+.sapLandviszSolutionBox {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+}
+.sapLandviszConnectionTextContainer {
+  opacity: 1;
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: auto;
+}
+.sapLandviszPsIcon {
+  background: #ffffff url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/24x24/ProductSystem_enable.png) no-repeat center;
+  height: 24px;
+  width: 24px;
+  float: right;
+  position: absolute;
+  margin: 2px 0;
+  top: 6px;
+}
+.sapLandviszConnectionBoxText {
+  margin: 2px 0;
+  position: absolute;
+  left: 42px;
+  top: 10px;
+}
+.sapLandviszBoxContainerLine {
+  width: 100%;
+  height: 0.3px;
+  position: absolute;
+  top: 38px;
+  border: #1B87E0 solid 1px;
+}
+.sapLandviszPversionIcon {
+  background: url(../../../../../UI5/sap/landvisz/themes/base/img/landscapeobjects/24x24/ProductVersion_enable.png) no-repeat;
+  height: 24px;
+  width: 24px;
+  float: right;
+  position: absolute;
+  margin: 2px 0;
+  top: 10px;
+}
+.sapLandviszConnectionBoxText {
+  margin: 2px 0;
+  position: absolute;
+  left: 42px;
+  top: 10px;
+}
+.sapLandviszConnection_entity_container {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 12px;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  vertical-align: top;
+  overflow: hidden;
+}
+.sapLandviszConnection_entity_container .labelDisplay {
+  display: block;
+}
+.sapLandviszConnectionBox .labelDisplay {
+  display: none;
+}
+.sapLandviszConnection_entity_container .boxRowDisplay {
+  display: none;
+}
+.sapLandviszConnectionBox .boxRowDisplay {
+  display: block;
+}
+.sapLandviszConnection_entity_container .connectionEntity {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sapLandviszConnection_entity_container .productSystem {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #c0e2f5 url(../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/landscapeobjects/32x32/ProductSystem_enable.png) 9px 9px no-repeat;
+}
+.sapLandviszConnection_entity_container .technicalSystem {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #c0e2f5 url(../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/landscapeobjects/32x32/TechnicalSystem_enable.png) 9px 9px no-repeat;
+}
+.sapLandviszConnection_entity_container .mobileSolution {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #c0e2f5 url(../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/landscapeobjects/32x32/Solution.png) 9px 9px no-repeat;
+}
+.sapLandviszSolutionBox .mobileSolution {
+  position: absolute;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  background: #c0e2f5 url(../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/landscapeobjects/32x32/Solution.png) 9px 9px no-repeat;
+}
+.sapLandviszSolutionBox .connectionEntity {
+  position: absolute;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  background-color: #c0e2f5;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sapLandviszSolutionBox .solutionRow {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  padding-top: 35px;
+  margin-left: 20px;
+  height: 50px;
+}
+.sapLandviszSolutionBox .solutionImage {
+  margin-top: 20px;
+}
+.sapLandviszSolutionBox .sapLandviszConnectionRowField {
+  margin: auto;
+  max-width: 100%;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandviszConnection_entity_container .connectionEntityPosition {
+  left: 236px;
+  top: 143px;
+  height: 50px;
+  width: 50px;
+  box-shadow: none;
+  cursor: auto;
+}
+.sapLandviszConnectionBox .connectionEntity {
+  position: absolute;
+  border-radius: 0;
+  cursor: pointer;
+}
+.sapLandviszConnectionBox .productSystem {
+  background-color: #c0e2f5;
+}
+.sapLandviszConnectionBox .technicalSystem {
+  background-color: #c0e2f5;
+}
+.sapLandviszConnectionBox .mobileSolution {
+  background-color: #c0e2f5;
+}
+.sapLandviszConnectionRowField {
+  margin: auto;
+  width: 30.5em;
+  font-weight: bold;
+}
+.sapLandviszCalloutText {
+  float: left;
+  width: 400px;
+}
+.sapLandviszCalloutPS .sapUiCltBaseArr {
+  background-color: #c0e2f5;
+}
+.sapLandviszCalloutPS .sapUiUx3TPContent {
+  margin: 0 0 0 5px;
+}
+.sapUiUx3TPNoButtons {
+  padding-bottom: 0px;
+}
+.sapUiUx3TPNoTitle {
+  padding-top: 0px;
+}
+.sapLandviszCalloutPS {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  padding: 0px 0px;
+  /* border: 1px solid grey !important; */
+  background-color: #c0e2f5;
+}
+.sapLandviszCalloutPS .productSystemPopup {
+  background-color: #c0e2f5 !important;
+  border-color: #F39B02;
+}
+.sapLandviszCalloutPS .technicalSystemPopup {
+  background-color: #c0e2f5 !important;
+  border-color: #008FD3;
+}
+.sapLandviszCalloutPS .mobileSolutionPopup {
+  background-color: #c0e2f5 !important;
+  border-color: #FFD05D;
+}
+.sapLandviszCalloutRowField {
+  width: 30.5em;
+}
+.sapLandviszCalloutRowFieldSmall {
+  width: 22em;
+}
+.sapLandviszConnectionDataNotopMargin {
+  margin-top: 0px !important;
+}
+.sapLandviszConnectionToolPopup {
+  max-height: 100px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+/* END "ConnectionEntity.css" */
+/* START "Connector.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/Connector.control */
+/* ============================================= */
+/* END "Connector.css" */
+/* START "DataContainer.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/DataContainer.control */
+/* ============================================= */
+.sapLandviszDataContainer {
+  color: #008000;
+  border: 1px solid #007cc0;
+  width: 14.9em;
+  background-color: #ffffff;
+}
+.sapLandviszDataContainerSize {
+  background: #e6e6e6;
+  font-weight: normal;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  vertical-align: middle;
+  cursor: pointer;
+  padding-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+.sapLandviszDataContainerSmallSize {
+  height: 18px;
+  font-size: 12px;
+}
+.sapLandviszDataContainerRegularSmallSize {
+  color: #555;
+  height: 20px;
+}
+.sapLandviszDataContainerRegularSize {
+  height: 20px;
+}
+.sapLandviszDataContainerMediumSize {
+  height: 22px;
+}
+.sapLandviszDataContainerLargeSize {
+  height: 22px;
+}
+.sapLandviszSelected {
+  background: #ffffff;
+  font-weight: bold;
+  border-top: 2px solid #008fd3;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+}
+.sapLandviszSelectedTechnicalSystem {
+  background: #ffffff;
+  font-weight: bold;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #008fd3 !important;
+}
+.sapLandviszSelectedProductSystem {
+  background: #ffffff;
+  font-weight: bold;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #f39b02 !important;
+}
+.sapLandviszSelectedSapComponent {
+  background: #ffffff;
+  font-weight: bold;
+  border-bottom: 0px !important;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #666666 !important;
+}
+.sapLandviszUnselected {
+  border: 1px solid #d3d3d3;
+  font-weight: normal;
+  background: #e6e6e6;
+}
+.sapLandviszUnselected:hover {
+  border: 1px solid #d3d3d3;
+  font-weight: normal;
+  background: #e5eaf3;
+}
+/* END "DataContainer.css" */
+/* START "DeploymentType.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/DeploymentType.control */
+/* ============================================= */
+.sapLandviszIconBorder {
+  border: 1px solid #999999;
+}
+/* END "DeploymentType.css" */
+/* START "EntityAction.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/EntityAction.control */
+/* ============================================= */
+.sapLandviszIcon_button {
+  cursor: pointer;
+  float: right;
+  margin: 8px 2px 2px 6px;
+}
+.sapLandviszIcon_buttonSmall {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  float: right;
+  margin: 10px 2px 2px;
+}
+/* END "EntityAction.css" */
+/* START "EntityCustomAction.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz.internal/EntityCustomAction.control */
+/* ============================================= */
+/* END "EntityCustomAction.css" */
+/* START "HeaderList.css" */
+/* ============================================= */
+/* CSS for control internal/HeaderList.control */
+/* ============================================= */
+.landviszHeaderList {
+  color: #008000;
+  border: 1px solid #007cc0;
+}
+.landviszHeaderListBtnRegularSize {
+  height: 12px;
+}
+.landviszHeaderListBtnMidiumSize {
+  height: 16px;
+}
+.landviszHeaderListBtnLargeSize {
+  height: 20px;
+}
+.sapLandviszLandscapeEntityRegularSize.activeHeaderButton {
+  background-color: #00451d;
+  border-color: #00451d;
+}
+.sapLandviszMiniNavigationSelected {
+  background-color: #ffffff;
+  height: 11px;
+  border: 1px solid #bfbfbf;
+}
+.sapLandviszTechnicalSystem {
+  border-top: 2px solid #008fd3 !important;
+}
+.sapLandviszProductSystem {
+  border-top: 2px solid #f39b02 !important;
+}
+.sapLandviszSapComponent {
+  border-top: 2px solid #666666 !important;
+}
+.sapLandviszMiniNavigationNormal {
+  height: 11px;
+  background-color: #bfbfbf;
+  border: 1px solid #e5e5e5;
+}
+.sapLandviszMiniNavigationInDisplay {
+  height: 11px;
+  background-color: #e6e6e6 !important;
+  border: 1px solid #bfbfbf;
+  margin-top: 1px;
+}
+/* END "HeaderList.css" */
+/* START "IdentificationBar.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/IdentificationBar.control */
+/* size css */
+.sapLandVisIdentificationBarSize {
+  float: left;
+  cursor: default;
+  color: #ffffff;
+  background-color: #008fd3;
+  font-size: 12px;
+}
+/*Small Size Entities*/
+.sapLandVisIdentificationBarSmallSize {
+  width: 6.1em;
+  height: 13em;
+}
+.sapLandVisIdentificationBarSmallSize .entityIcon {
+  margin: 1em;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .img {
+  margin: 0px 0px 0px 8px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .IdentificationText {
+  height: 1.5em;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .qualifierIcon {
+  margin: 15px 12.5px 0px 17px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .qualifierText {
+  height: 13.333333333333334px;
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .sapLandVisProdSysEntity {
+  background-color: #f39b02;
+  border: 1px solid #f39b02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarSmallSize .solutionTypeIcon {
+  height: 2em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*RegularSmall Size Entities */
+.sapLandVisIdentificationBarRegularSmallSize {
+  width: 7em;
+  height: 19.5em;
+}
+.sapLandVisIdentificationBarRegularSmallSize .entityIcon {
+  margin: 1.1em;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .img {
+  margin: 3px 0px 0px 6px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .IdentificationText {
+  height: 3em;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .qualifierIcon {
+  margin: 45px 12.5px 0px 18px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .qualifierText {
+  height: 13.333333333333334px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .sapLandVisProdSysEntity {
+  background-color: #f39b02;
+  border: 1px solid #f39b02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSmallSize .solutionTypeIcon {
+  height: 4em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*Regular Size Entities*/
+.sapLandVisIdentificationBarRegularSize {
+  width: 8.333em;
+  height: 21.58em;
+}
+.sapLandVisIdentificationBarRegularSize .entityIcon {
+  margin: 1.5em;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .img {
+  margin: 4px 0px 0px 9.5px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .IdentificationText {
+  height: 5em;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .qualifierIcon {
+  margin: 15px 12.5px 0px 30px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .qualifierText {
+  height: 13.333333333333334px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .sapLandVisProdSysEntity {
+  background-color: #f39b02;
+  border: 1px solid #f39b02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarRegularSize .solutionTypeIcon {
+  height: 6.8em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*Medium Size Entities*/
+.sapLandVisIdentificationBarMediumSize {
+  width: 8.4em;
+  height: 25em;
+}
+.sapLandVisIdentificationBarMediumSize .entityIcon {
+  margin: 18px 15px 12.5px;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .img {
+  margin: 8px 4px 4px 11px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .IdentificationText {
+  height: 7.5em;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .qualifierIcon {
+  margin: 14px 15px 0px 14px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .qualifierText {
+  height: 13.3333px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .sapLandVisProdSysEntity {
+  background-color: #f39b02;
+  border: 1px solid #f39b02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMediumSize .solutionTypeIcon {
+  height: 10em;
+  margin-left: 25px;
+  cursor: default;
+}
+/*Large Entites*/
+.sapLandVisIdentificationBarLargeSize {
+  width: 8.4em;
+  height: 38em;
+}
+.sapLandVisIdentificationBarLargeSize .entityIcon {
+  margin: 18px 15px 12.5px;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .img {
+  margin: 8px 4px 4px 11px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .IdentificationText {
+  height: 17.5em;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .qualifierIcon {
+  margin: 7.5px 15px 0px 30px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .qualifierText {
+  height: 13.3333px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .sapLandVisProdSysEntity {
+  background-color: #f39b02;
+  border: 1px solid #f39b02;
+  cursor: default;
+}
+.sapLandVisIdentificationBarLargeSize .solutionTypeIcon {
+  height: 23em;
+  margin-left: 25px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize {
+  width: 8.4em;
+  float: left;
+}
+.sapLandVisIdentificationBarMaximizeSize .entityIcon {
+  margin: 18px 15px 12.5px;
+  background-color: #ffffff;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .img {
+  margin: 8px 4px 4px 11px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .IdentificationText {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .qualifierIcon {
+  margin: 7.5px 15px 0px 30px;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .qualifierText {
+  height: 13.3333px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+.sapLandVisIdentificationBarMaximizeSize .sapLandVisTechSysEntity {
+  background-color: #008fd3;
+  border: 1px solid #008fd3;
+  cursor: default;
+}
+.sapLandVisIdentificationBarMaximizeSize .sapLandVisProdSysEntity {
+  background-color: #f39b02;
+  border: 1px solid #f39b02;
+}
+.sapLandviszCursor {
+  cursor: default;
+}
+/* END "IdentificationBar.css" */
+/* START "LandscapeEntity.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LandscapeEntity.control */
+/* ============================================= */
+.sapLandviszLandscapeEntity {
+  font-size: 12px;
+  z-index: 1;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszStatusSmallSize {
+  width: 22.7em;
+  height: 15.8em;
+  float: left;
+}
+.sapLandviszStatusRegularSmallSize {
+  width: 33.7em;
+  float: left;
+  height: 22.3em;
+}
+.sapLandviszStatusRegularSize {
+  width: 38.7em;
+  height: 24.5em;
+  float: left;
+}
+.sapLandviszStatusMediumSize {
+  width: 43.5em;
+  height: 28em;
+  float: left;
+}
+.sapLandviszStatusLargeSize {
+  height: 41.5em;
+  float: left;
+  width: 64.5em;
+}
+.sapLandviszActionBarSmallSize {
+  border: 0px solid #b8ccc5;
+  float: Left;
+  cursor: pointer;
+  width: 21.2em;
+}
+.sapLandviszActionBarRegularSmallSize {
+  border: 0px solid #b8ccc5;
+  float: Left;
+  cursor: pointer;
+  width: 31.5em;
+}
+.sapLandviszActionBarRegularSize {
+  border: 0px solid #b8ccc5;
+  float: Left;
+  cursor: pointer;
+  width: 36.5em;
+}
+.sapLandviszActionBarMediumSize {
+  border: 0px solid #b8ccc5;
+  float: left;
+  cursor: pointer;
+  width: 41em;
+}
+.sapLandviszActionBarLargeSize {
+  border: 0px solid #b8ccc5;
+  float: Left;
+  cursor: pointer;
+  width: 62em;
+}
+.sapLandviszSingleLabelHeaderWidth {
+  width: 100%;
+  color: #000;
+  margin-top: 5px;
+}
+.sapLandviszAllActionLayout {
+  float: right;
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  height: 32px;
+  cursor: default;
+}
+.sapLandviszActionLayout {
+  float: right;
+  text-align: center;
+  padding-top: 2px;
+  margin-right: 0px;
+}
+.sapLandviszSmallSizesPropertySection {
+  height: 9.8em;
+  overflow: auto;
+  width: 14.8em;
+  cursor: default;
+}
+.sapLandviszSmallSizesPropertySectionSmv {
+  height: 10.7em !important;
+}
+.sapLandviszRegularSmallSizesPropertySection {
+  height: 16em;
+  overflow: auto;
+  width: 24.5em;
+  cursor: default;
+}
+.sapLandviszRegularSmallSizesPropertySectionSmv {
+  height: 17.2em !important;
+}
+.sapLandviszRegularSizesPropertySection {
+  height: 18.10em;
+  overflow: auto;
+  width: 28.2em;
+  cursor: default;
+}
+.sapLandviszRegularSizesPropertySectionSmv {
+  height: 19.25em !important;
+}
+.sapLandviszMediumSizesPropertySection {
+  height: 21.3em;
+  overflow: auto;
+  width: 32.6em;
+  cursor: default;
+}
+.sapLandviszLargeSizesPropertySection {
+  height: 34em;
+  overflow: auto;
+  width: 53.6em;
+  cursor: default;
+}
+.sapLandviszSmallSizesPropertyDialog {
+  height: 10em;
+  overflow: auto;
+  width: 14.1em;
+  background-color: #ffffff;
+}
+.sapLandviszMediumSizesPropertyDialog {
+  height: 21.8em;
+  overflow: auto;
+  width: 19em;
+  background-color: #ffffff;
+}
+.sapLandviszLargeSizesPropertyDialog {
+  height: 61.8em;
+  overflow: auto;
+  width: 59em;
+  background-color: #ffffff;
+}
+/*
+.sapLandviszMiniNavigationButtonNormal {background-color: #e2e2e2;
+height: 13px;
+}
+*/
+.sapLandviszMiniNavigationButtonSelected {
+  background-color: #F7F7F8;
+  height: 13px;
+  border: 1px solid;
+}
+/*Small Size*/
+.sapLandviszLandscapeEntitySmallSize {
+  border: 1px solid #b8ccc5;
+  height: 13em;
+  float: left;
+  cursor: pointer;
+  width: 21em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntitySmallSize.buttonSize {
+  height: 12px;
+}
+.sapLandviszLandscapeEntitySmallSize .singleHeader {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 14px;
+  height: 28px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/*RegularSmall Size */
+.sapLandviszLandscapeEntityRegularSmallSize {
+  border: 1px solid #b8ccc5;
+  height: 19.5em;
+  float: left;
+  cursor: pointer;
+  width: 31.5em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityRegularSmallSize .sapUiUx3NavBarItem {
+  font-size: 10px;
+}
+.sapLandviszLandscapeEntityRegularSmallSize .sapUiUx3NavBarItemSel > a {
+  font-size: 11px;
+  padding: 0 5px 0;
+}
+.sapLandviszLandscapeEntityRegularSmallSize.buttonSize {
+  height: 12px;
+}
+/*Regular Size*/
+.sapLandviszLandscapeEntityRegularSize {
+  border: 1px solid #b8ccc5;
+  height: 21.58em;
+  float: left;
+  cursor: pointer;
+  width: 36.5em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityRegularSize .sapUiUx3NavBarItem {
+  font-size: 10px;
+}
+.sapLandviszLandscapeEntityRegularSize .sapUiUx3NavBarItemSel > a {
+  font-size: 11px;
+  padding: 0 5px 0;
+}
+.sapLandviszLandscapeEntityRegularSize.buttonSize {
+  height: 12px;
+}
+/*Medium Size*/
+.sapLandviszLandscapeEntityMediumSize {
+  border: 1px solid #b8ccc5;
+  height: 25em;
+  float: left;
+  cursor: pointer;
+  width: 41em;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityMediumSize .sapUiUx3NavBarItem {
+  font-size: 14px;
+}
+.sapLandviszLandscapeEntityMediumSize .sapUiUx3NavBarItemSel > a {
+  font-size: 16px;
+}
+.sapLandviszLandscapeEntityMediumSize.buttonSize {
+  height: 13px;
+}
+.sapLandviszLandscapeEntityMediumSize.selectBackground {
+  background-color: #F7F7F8;
+}
+.sapLandviszLandscapeEntityMediumSize.normalBackground {
+  background-color: #e2e2e2;
+}
+/*Large Size*/
+.sapLandviszLandscapeEntityLargeSize {
+  border: 1px solid #b8ccc5;
+  width: 62em;
+  height: 38em;
+  float: left;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.sapLandviszLandscapeEntityLargeSize .sapUiUx3NavBarItem {
+  font-size: 16px;
+}
+.sapLandviszLandscapeEntityLargeSize .sapUiUx3NavBarItemSel > a {
+  font-size: 18px;
+}
+.sapLandviszLandscapeEntityLargeSize.sapLandviszMiniNavigationButtonSelected {
+  background-color: #F7F7F8;
+}
+.sapLandviszLandscapeEntityLargeSize.buttonSize {
+  height: 14px;
+}
+.sapUiUx3PropertyVisible {
+  visibility: visible;
+}
+.sapUiUx3PropertyHidden {
+  visibility: hidden;
+}
+.sapLandviszLandscapeEntityNavIcon {
+  width: 17px;
+  background: #e6e6e6;
+  font-weight: normal;
+  cursor: pointer;
+  border: 1px solid #d3d3d3;
+  padding: 4px 2px;
+}
+.sapLandviszExcludeFromLayout {
+  width: 0px;
+  height: 0px;
+}
+.sapLandviszMiniNavigationVisible {
+  background-color: #e5e5e5;
+  width: 100%;
+  display: block;
+  visibility: visible;
+}
+.sapLandviszMiniNavigationHidden {
+  background-color: #e5e5e5;
+  width: 100%;
+  visibility: hidden;
+  display: none;
+}
+.sapLandviszSMVContainerRegularSmall {
+  display: block;
+  width: 600px;
+  height: 500px;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+}
+.sapLandviszSMVContainerRegular {
+  display: block;
+  width: 600px;
+  height: 500px;
+  top: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszSMVContainerMedium {
+  display: block;
+  width: 600px;
+  height: 500px;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+}
+.sapLandviszLandscapeEntityRegularSmallSize .singleHeader {
+  width: 21em;
+  text-align: center;
+  vertical-align: middle;
+  height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  height: 28px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszLandscapeEntityMediumSize .singleHeader {
+  border-bottom: 2px solid #007dc0;
+  width: 28em;
+  text-align: center;
+  vertical-align: middle;
+  height: 28px;
+  font-weight: bold;
+  font-size: 14px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszLandscapeEntityRegularSize .singleHeader {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 14px;
+  height: 28px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszSingleHeaderTs {
+  border-top: 2px solid #008fd3 !important;
+  border-right: 2px solid #008fd3 !important;
+  border-left: 2px solid #008fd3 !important;
+}
+.sapLandviszSingleHeaderPs {
+  border-top: 2px solid #f39b02 !important;
+  border-right: 2px solid #f39b02 !important;
+  border-left: 2px solid #f39b02 !important;
+}
+.sapLandviszLandscapeEntityRegularSize .singleHeaderExplodeView {
+  /*background-color: #ccc !important;*/
+}
+.sapLandviszDisplayNone {
+  display: none;
+}
+.sapLandviszDisplayBlock {
+  display: block;
+}
+.sapLandviszMaximizePropertySection {
+  overflow: auto;
+  width: 100%;
+  cursor: default;
+}
+.sapLandviszActionBarMaximizeSize {
+  border: 0px solid #b8ccc5;
+  float: Left;
+  cursor: pointer;
+}
+.sapLandviszAllActionLayoutMaximize {
+  font-size: 14px;
+  height: 32px;
+  text-align: right;
+  width: 100%;
+  cursor: default;
+}
+.sapLandviszStatusMaximizeSize {
+  height: 100%;
+  float: left;
+  width: 100%;
+}
+.sapLandviszLandscapeEntityMaximizedSize {
+  border: 1px solid #b8ccc5;
+  float: left;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszVlayoutOverLay {
+  overflow: auto;
+  width: 100%;
+  background-color: #c0e2f5;
+  max-height: 100%;
+  z-index: 4;
+  opacity: 0.9;
+}
+.sapLandviszVlayoutOverLay .overlayRow {
+  border: 0px;
+  z-index: 100;
+}
+.sapLandviszTechnicalSystem {
+  border-top: 2px solid #008fd3 !important;
+  border-left: 1px solid #aaaaaa !important;
+  border-right: 1px solid #aaaaaa !important;
+}
+.sapLandviszProductSystem {
+  border-top: 2px solid #f39b02 !important;
+  border-left: 1px solid #aaaaaa !important;
+  border-right: 1px solid #aaaaaa !important;
+}
+.sapLandviszSapComponent {
+  border-top: 2px solid #666666 !important;
+  border-left: 1px solid #aaaaaa !important;
+  border-right: 1px solid #aaaaaa !important;
+}
+.trackEntity {
+  width: 100%;
+  height: 100%;
+  background-color: #dadada;
+  border: #939191 solid 1px;
+}
+.trackLogo {
+  background: url(../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/landscapeobjects/32x32/trackLogo.png);
+  width: 80px;
+  height: 20px;
+  background-size: cover;
+  margin: auto;
+  margin-top: 10px;
+}
+.trackName {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
+  font-weight: bold;
+  width: 252px;
+}
+.trackFooter {
+  position: absolute;
+  width: 252px;
+  text-align: center;
+  bottom: 10px;
+  color: #666666;
+  font-size: 14px;
+}
+.trackInfoIcon {
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  color: #666666;
+}
+/* END "LandscapeGlobal.css" */
+/* START "LandscapeObject.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LandscapeObject.control */
+/* ============================================= */
+.sapLandviszLandscapeObject {
+  color: #008000;
+  border: 1px solid #007cc0;
+}
+/* END "LandscapeObject.css" */
+/* START "LandscapeViewer.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LandscapeViewer.control */
+/* ============================================= */
+.sapLandviszSolutionViewContainer {
+  position: relative;
+  overflow: auto;
+  top: 32px;
+}
+.sapLandviszBoxViewBorderContainer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: 1;
+  position: relative;
+  border: 1px solid #999999;
+  margin: auto;
+}
+.sapLandviszViewer_container_header {
+  height: 28px;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bolder;
+  cursor: default;
+  border-bottom: 1px solid #dadada;
+  color: #222;
+  -webkit-box-shadow: inset -1px 4px 202px -4px #dddddd;
+  -moz-box-shadow: inset -1px 4px 202px -4px #dddddd;
+  box-shadow: inset -1px 4px 202px -4px #dddddd;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszViewMainContainer {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.sapLandviszViews {
+  position: absolute;
+  top: 0;
+}
+.sapLandviszView {
+  float: left;
+  font-size: 14px;
+}
+.sapLandviszView_text,
+.sapLandviszSolution_view_text {
+  height: 26px;
+  margin-right: 2px;
+  background-color: #ffffff !important;
+  color: #007cc0 !important;
+}
+.sapLandviszSolution_view_text > .sapUiBtnIco,
+.sapLandviszView_text > .sapUiBtnIco {
+  color: #007cc0 !important;
+}
+.selectedView,
+.selectedView > .sapUiBtnIco {
+  background-color: #007cc0 !important;
+  color: #ffffff !important;
+}
+.sapLandviszOption_view_text {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #808080;
+  color: white;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.sapLandviszView_icon {
+  margin-left: 5px;
+}
+.sapLandviszCloseButton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  margin: 4px 2px;
+}
+.sapLandviszBoxContainerLevelHeader {
+  position: absolute;
+  background-color: #dadada;
+}
+.sapLandviszLevelLabel {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  white-space: pre-line;
+  display: block;
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.MotionBlur(strength=0), progid:DXImageTransform.Microsoft.BasicImage(rotation = 3 , xray = 1)';
+}
+.sapLandviszDependencyPath {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  margin: 4px 30px;
+  font-weight: bold;
+  font-size: 12px;
+  max-width: 40%;
+  text-align: right;
+}
+.sapLandviszOptionContainer {
+  top: 28px;
+  height: 51px;
+  position: relative;
+  margin-top: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.sapLandviszEntityOptionContainer {
+  height: 40px;
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.sapLandviszDeploymentTypeContainer {
+  position: absolute;
+  height: 40px;
+  overflow: hidden;
+}
+.sapLandviszDependencyPathLabel {
+  width: 100%;
+  font-size: 12px;
+}
+.sapLandviszactionIndex {
+  z-index: 3;
+}
+.sapLandviszClv_container_frame_navigation {
+  display: none;
+  width: 20%;
+  height: 22%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute !important;
+  z-index: 2003;
+  background-color: transparent;
+  border: 2px solid rgba(44, 44, 44, 0.92);
+  cursor: move;
+  background-color: #e5e5e5;
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  height: 16px;
+  width: 32px;
+  padding: 0 8px;
+  margin-left: -16px;
+  top: -16px;
+  left: 50%;
+  overflow: hidden;
+  bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgba(44, 44, 44, 0.92);
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .navigationBarButton {
+  width: 16px;
+  height: 16px;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowUp {
+  background: url("../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/framework/16x16/ArrowBar_up.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowUp:hover,
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowUp:active {
+  background: url("../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/framework/16x16/ArrowBar_up_hover.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowDown {
+  background: url("../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/framework/16x16/ArrowBar_down.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowDown:hover,
+.sapLandviszClv_container_frame_navigation .navigationHeader .arrowDown:active {
+  background: url("../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/framework/16x16/ArrowBar_down_hover.png");
+}
+.sapLandviszClv_container_frame_navigation .navigationNavigator {
+  background: #e9fef4;
+  position: relative;
+  opacity: .65;
+  cursor: url("../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/framework/24x24/drag_n_drop.cur"), pointer;
+}
+.sapLandviszDisplayBlock {
+  display: block;
+}
+.sapLandviszDisplayNone {
+  display: none;
+}
+.sapLandviszImg {
+  margin-bottom: 2px;
+}
+.sapLandviszBtnDisable {
+  color: #dadada !important;
+  opacity: .5 !important;
+  background-color: transparent !important;
+  cursor: default !important;
+}
+.sapLandviszOptionLabel {
+  height: 35px;
+  margin: 0 10px;
+  padding-top: 7px;
+  color: #00669c;
+  font-size: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* END "LandscapeViewer.css" */
+/* START "LinearRowField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LinearRowField.control */
+/* ============================================= */
+.sapLandviszLinearRowField {
+  /*color: @sapUiTextColor; */
+  color: #808080;
+  border: 0px solid #808080;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.sapLandviszLinearRowFieldSize {
+  border-bottom: 1px solid #999999;
+  font-family: Verdana, Arial, sans-serif;
+}
+.sapLandviszLinearRowFieldSmallSize {
+  width: 98%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize {
+  width: 98.8%;
+}
+.sapLandviszLinearRowFieldRegularSize {
+  width: 99%;
+}
+.sapLandviszLinearRowFieldMediumSize {
+  width: 99%;
+}
+.sapLandviszLinearRowFieldLargeSize {
+  width: 99%;
+}
+.sapLandviszLinearRowFieldDataCommon {
+  color: #000000 !important;
+  margin: 5px 0px 5px 5px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldSmallSize .dataValue {
+  font-size: 12px;
+  width: 53%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataLabel {
+  font-size: 12px;
+  width: 80%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataValue {
+  font-size: 12px;
+  max-width: 80%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataLabelwithRightIcon {
+  font-size: 12px;
+  width: 67.5%;
+}
+.sapLandviszLinearRowFieldSmallSize .fullDataValuewithRightIcon {
+  font-size: 12px;
+  width: 67.5%;
+}
+.sapLandviszLinearRowFieldSmallSize .dataLabel {
+  border: 0px solid #808080;
+  font-weight: bold;
+  font-size: 12px;
+  width: 35%;
+}
+.sapLandviszLinearRowFieldSmallSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+  width: 4%;
+}
+/* Regular small*/
+.sapLandviszLinearRowFieldRegularSmallSize .dataValue {
+  font-size: 12px;
+  width: 53%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataLabel {
+  font-size: 12px;
+  width: 80%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataValue {
+  font-size: 12px;
+  max-width: 80%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataLabelwithRightIcon {
+  font-size: 12px;
+  width: 67.5%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataValuewithRightIcon {
+  font-size: 14px;
+  width: 62.5%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .dataLabel {
+  border: 0px solid #808080;
+  font-weight: bold;
+  font-size: 13px;
+  width: 36%;
+  overflow: visible;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+  width: 4%;
+}
+.sapLandviszLinearRowFieldRegularSmallSize .fullDataLabelwithRightIcon {
+  font-size: 13px;
+  width: 72.5%;
+}
+/* Regular*/
+.sapLandviszLinearRowFieldRegularSize .dataValue {
+  margin-left: 5px;
+  color: #808080;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 55%;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataLabel {
+  margin-left: 5px;
+  color: #808080;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 89%;
+  margin-bottom: 5px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataValue {
+  margin-left: 5px;
+  color: #808080;
+  font-size: 14px;
+  margin-top: 5px;
+  max-width: 86%;
+  margin-bottom: 5px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataLabelwithRightIcon {
+  margin-left: 5px;
+  color: #808080;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 77.5%;
+  margin-bottom: 5px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldRegularSize .fullDataValuewithRightIcon {
+  margin-left: 5px;
+  color: #808080;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 77.5%;
+  margin-bottom: 5px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldRegularSize .dataLabel {
+  color: #808080;
+  margin-left: 5px;
+  border: 0px solid #808080;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 37%;
+  margin-bottom: 5px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszLinearRowFieldRegularSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+  width: 4%;
+}
+/*Medium*/
+.sapLandviszLinearRowFieldMediumSize .dataValue {
+  font-size: 14px;
+  width: 56%;
+}
+.sapLandviszLinearRowFieldMediumSize .dataLabel {
+  border: 0px solid #808080;
+  font-weight: bold;
+  font-size: 14.5px;
+  width: 40%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataLabel {
+  font-size: 14px;
+  width: 91%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataValue {
+  font-size: 14.5px;
+  max-width: 91%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataLabelwithRightIcon {
+  font-size: 14px;
+  width: 84.5%;
+}
+.sapLandviszLinearRowFieldMediumSize .fullDataValuewithRightIcon {
+  font-size: 14.5px;
+  width: 84.5%;
+}
+.sapLandviszLinearRowFieldMediumSize .dataSeperator {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.sapLandviszLinearRowFieldLargeSize .dataValue {
+  font-size: 16px;
+  width: 56%;
+}
+.sapLandviszLinearRowFieldLargeSize .dataLabel {
+  border: 0px solid #808080;
+  font-weight: bold;
+  font-size: 16.5px;
+  margin-top: 5px;
+  width: 40%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataLabel {
+  font-size: 16px;
+  width: 92%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataValue {
+  font-size: 16px;
+  max-width: 92%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataLabelwithRightIcon {
+  font-size: 16px;
+  width: 91%;
+}
+.sapLandviszLinearRowFieldLargeSize .fullDataValuewithRightIcon {
+  font-size: 16px;
+  width: 91%;
+}
+.sapLandviszLinearRowFieldLargeSize .dataSeperator {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.sapLandviszWarningBG {
+  background-color: #fffcb5;
+}
+.sapLandviszRightIcon {
+  float: right;
+}
+/* END "LinearRowField.css" */
+/* START "LongTextField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/LongTextRenderer.control */
+/* ============================================= */
+.sapLandviszLongTextSizeCommon {
+  color: #808080;
+  width: 97%;
+  margin: 5px 0px 5px 5px;
+  font-family: Verdana, Arial, sans-serif;
+}
+.sapLandviszLongTextSmallSize {
+  font-size: 12px;
+  height: 98%;
+}
+.sapLandviszLongTextRegularSmallSize {
+  font-size: 13px;
+  height: 98%;
+}
+.sapLandviszLongTextRegularSize {
+  font-size: 13px;
+  height: 98%;
+}
+.sapLandviszLongTextMediumSize {
+  font-size: 14px;
+  height: 96%;
+}
+.sapLandviszLongTextLargeSize {
+  font-size: 14px;
+  height: 96%;
+}
+/* END "LongTextField.css" */
+/* START "ModelingStatus.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/ModelingStatus.control */
+/* ============================================= */
+.sapLandviszStatusSectionSmallSize {
+  width: 16px;
+  float: left;
+  margin-top: 32px;
+  cursor: pointer;
+}
+.sapLandviszStatusSectionAllSize {
+  width: 24px;
+  float: left;
+  margin-top: 32px;
+  cursor: pointer;
+}
+.stateIconClass {
+  border: 1px solid #999999 !important;
+  cursor: default;
+}
+/* END "ModelingStatus.css" */
+/* START "NestedRowField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/NestedRowField.control */
+/* ============================================= */
+.sapLandviszNestedRowField {
+  color: #008000;
+  border: 1px solid #007cc0;
+}
+.sapLandviszNestedRowFieldCommon {
+  color: #000000 !important;
+  margin: 5px 0px 5px 0px;
+  font-family: Verdana, Arial, sans-serif;
+  white-space: normal !important;
+}
+.sapLandviszNestedRowFieldSmallSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldSmallSize .dataLabel {
+  font-size: 12px;
+  width: 78%;
+}
+.sapLandviszNestedRowFieldSmallSize .dataValue {
+  font-size: 12px;
+  width: 60%;
+}
+.sapLandviszNestedRowFieldSmallSize .rowFieldinNestedRow {
+  margin-left: 15px;
+  width: 92%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+}
+/*RegularSmall*/
+.sapLandviszNestedRowFieldRegularSmallSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldRegularSmallSize .dataLabel {
+  font-size: 14px;
+  width: 82%;
+}
+.sapLandviszNestedRowFieldRegularSmallSize .dataValue {
+  border: 0px solid #808080;
+  font-size: 14px;
+  width: 70%;
+}
+.sapLandviszNestedRowFieldRegularSmallSize .rowFieldinNestedRow {
+  padding-left: 25px;
+  width: 96%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/*Regular*/
+.sapLandviszNestedRowFieldRegularSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldRegularSize .dataLabel {
+  font-size: 14px;
+  width: 84%;
+}
+.sapLandviszNestedRowFieldRegularSize .dataValue {
+  border: 0px solid #808080;
+  font-size: 14px;
+  width: 76%;
+}
+.sapLandviszNestedRowFieldRegularSize .rowFieldinNestedRow {
+  padding-left: 25px;
+  width: 99%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* Medium*/
+.sapLandviszNestedRowFieldMediumSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldMediumSize .dataLabel {
+  font-size: 14px;
+  width: 90%;
+}
+.sapLandviszNestedRowFieldMediumSize .dataValue {
+  border: 0px solid #808080;
+  font-size: 14px;
+  width: 83%;
+}
+.sapLandviszNestedRowFieldMediumSize .rowFieldinNestedRow {
+  margin-left: 25px;
+  width: 92%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+}
+.sapLandviszNestedRowFieldLargeSize {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 5px;
+}
+.sapLandviszNestedRowFieldLargeSize .dataLabel {
+  font-size: 16px;
+  width: 91%;
+}
+.sapLandviszNestedRowFieldLargeSize .dataValue {
+  border: 0px solid #808080;
+  font-size: 16px;
+  width: 83%;
+}
+.sapLandviszNestedRowFieldLargeSize .rowFieldinNestedRow {
+  margin-left: 30px;
+  width: 94%;
+  border-bottom: 0px solid #999999;
+  margin-top: 0px;
+}
+.sapLandviszDataLabelIcon {
+  margin-left: 5px;
+}
+.sapLandviszDataValueIcon {
+  margin-left: 35px;
+}
+.sapLandviszDataSection {
+  width: 100%;
+}
+/* END "NestedRowField.css" */
+/* START "Option.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/Option.control */
+/* ============================================= */
+/* END "Option.css" */
+/* START "OptionEntity.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/OptionEntity.control */
+/* ============================================= */
+.sapLandviszOptionButton {
+  width: 35px;
+  height: 35px;
+  font-size: 22px;
+  text-align: center;
+  margin-right: 10px;
+  border: 1px solid;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapLandviszOptionButton .viewText {
+  font-size: 22px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 34px;
+  margin-left: 2px;
+}
+.sapLandviszOptionButton .viewBtn {
+  vertical-align: middle;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  cursor: pointer;
+}
+.sapLandviszOptionButton .viewBtn > label {
+  cursor: pointer;
+}
+/* END "OptionEntity.css" */
+/* START "OptionSource.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/OptionSource.control */
+/* ============================================= */
+.sapLandviszBoxViewContainer {
+  display: block;
+  float: center;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  border: 1px solid #808080;
+}
+/* END "OptionSource.css" */
+/* START "SingleDataContainer.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/SingleDataContainer.control */
+/* ============================================= */
+.sapLandviszSvmSectorFreeStyle {
+  padding: 0;
+  display: block;
+  font-family: Arial, serif;
+  font-size: 14px;
+  overflow: hidden;
+  loat: left;
+}
+.sapLandviszSMVContainerAllSizes {
+  float: left;
+  margin: 33px 0px 0px 30px;
+  padding-left: 32px;
+  font-family: Arial, serif;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #b8ccc5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+}
+.sapLandviszSMVContainerRegularSmall .svmContainer {
+  font-size: 12px;
+  height: 21.2em;
+  width: 28.1em;
+}
+.sapLandviszSMVContainerMedium .svmContainer {
+  font-size: 14px;
+  height: 21.3em;
+  width: 28em;
+}
+.sapLandviszSMVContainerRegular .svmContainer {
+  font-size: 12px;
+  height: 21.7em;
+  width: 28.1em;
+}
+.sapLandviszSvmDataContainer {
+  width: 100%;
+  height: 19em;
+  overflow: auto;
+}
+.sapLandviszSvmHeaderLabel {
+  margin-top: 5px;
+  max-width: 93%;
+  font-size: 14px;
+  color: #000000;
+}
+.sapLandviszSvmHeader {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  height: 28px;
+  background-color: #dddddd;
+}
+.sapLandviszSvmSectorCloseBtn {
+  background: url(../../../../../UI5/sap/landvisz/themes/sap_bluecrystal/img/framework/24x24/closesection_enable_dark.png) no-repeat;
+  height: 24px;
+  width: 24px;
+  float: right;
+  margin: 2px 0;
+  cursor: pointer;
+}
+/* END "SingleDataContainer.css" */
+/* START "TreeField.css" */
+/* ============================================= */
+/* CSS for control sap.landvisz/TreeField.control */
+/* ============================================= */
+.sapLandviszTreeField {
+  color: #008000;
+  border: 1px solid #007cc0;
+}
+.sapLandVisTreeFieldSmallSize {
+  width: 14.7em;
+  height: 8.75em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.sapLandVisTreeFieldSmallSize.landscapetree {
+  width: 14.9em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldRegularSmallSize {
+  width: 18em;
+  height: 10.5em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.sapLandVisTreeFieldRegularSmallSize.landscapetree {
+  width: 19em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldRegularSize {
+  width: 20em;
+  height: 13em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.sapLandVisTreeFieldRegularSize.landscapetree {
+  width: 22em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldMediumSize {
+  width: 27.4em;
+  height: 16.8em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.sapLandVisTreeFieldMediumSize.landscapetree {
+  width: 28.6em;
+  height: 100%;
+  float: left;
+}
+.sapLandVisTreeFieldLargeSize {
+  height: 24.8em;
+  width: 40em;
+  float: left;
+  cursor: pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.sapLandVisTreeFieldLargeSize.landscapetree {
+  width: 53em;
+  height: 100%;
+  float: left;
+}
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/custom.less (Version 10.30.3.240577.0) *******************/
+
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/custom1bluecrystal3/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/landvisz/themes/custom1bluecrystal3/library.less (Version 1.34.0) *******************/
+
+
+.sapThemeMetaData-UI5-sap-landvisz{background-image: url('data:text/plain;utf-8,{"Path": "UI5.sap/landvisz.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.0.20160414054607", "Source": "1.34.0", "Engine": "1.16.1"}}');}

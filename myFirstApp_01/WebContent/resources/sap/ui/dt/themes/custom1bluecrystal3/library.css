@@ -1,0 +1,90 @@
+/**
+* Copyright (c) 2013 SAP AG, All Rights Reserved
+*
+* Theming Engine 1.16.1
+* data:{"Path": "UI5.sap/ui/dt.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.9.20160414054603", "Source": "1.34.9", "Engine": "1.16.1"}}
+*/
+
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/base/global.less (Version 1.34.9) *******************/
+
+
+/******************* FILE /UI5/sap/ui/dt/themes/base/library.less (Version 1.34.9) *******************/
+
+.sapUiDtOverlay {
+  position: absolute;
+  outline: none;
+}
+.sapUiDtOverlay:before,
+.sapUiDtOverlay:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.sapUiDtOverlay:focus:before {
+  content: " ";
+  border: 2px solid rgba(77, 144, 254, 0.5);
+}
+.sapUiDtDummyScrollContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.sapUiDtOverlayTargetZone .sapUiDtOverlaySelected:after {
+  content: none;
+}
+.sapUiDtOverlayTargetZone:after {
+  content: " ";
+  border: 1px dashed #008000;
+}
+.sapUiDtOverlaySelected:after {
+  content: " ";
+  border: 1px solid #3355ff;
+}
+.sapUiDtOverlayMovable {
+  cursor: move;
+}
+.sapUiDtOverlayCutted {
+  background-color: #ffffff !important;
+  opacity: 0.5;
+}
+#overlay-container {
+  position: fixed;
+}
+.sapUiDtDragGhostWrapper {
+  position: fixed;
+  pointer-events: none;
+}
+/* fix for chrome */
+.sap-desktop[data-sap-ui-browser^="cr"] .sapUiDtDragGhostWrapper {
+  padding-left: -500px;
+  padding-bottom: 500px;
+  bottom: -1000px;
+}
+.sapUiDtClonedDom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.sapUiDtClonedDom * {
+  pointer-events: none !important;
+}
+
+/******************* FILE /Base/baseLib/sap_bluecrystal/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/sap_bluecrystal/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/ui/dt/themes/sap_bluecrystal/library.less (Version 1.34.9) *******************/
+/******************* FILE /Base/baseLib/custom1bluecrystal3/custom.less (Version 10.30.3.240577.0) *******************/
+
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/custom1bluecrystal3/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/ui/dt/themes/custom1bluecrystal3/library.less (Version 1.34.9) *******************/
+
+
+.sapThemeMetaData-UI5-sap-ui-dt{background-image: url('data:text/plain;utf-8,{"Path": "UI5.sap/ui/dt.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.9.20160414054603", "Source": "1.34.9", "Engine": "1.16.1"}}');}

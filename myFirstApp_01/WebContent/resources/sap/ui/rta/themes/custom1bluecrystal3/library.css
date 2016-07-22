@@ -1,0 +1,310 @@
+/**
+* Copyright (c) 2013 SAP AG, All Rights Reserved
+*
+* Theming Engine 1.16.1
+* data:{"Path": "UI5.sap/ui/rta.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.9.20160414054601", "Source": "1.34.9", "Engine": "1.16.1"}}
+*/
+
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/base/global.less (Version 1.34.9) *******************/
+
+
+/******************* FILE /UI5/sap/ui/rta/themes/base/library.less (Version 1.34.9) *******************/
+
+/* START "shared.less" */
+/* This CSS shares it rules with all other CSS of this library */
+/* END "shared.less" */
+/* START "ToolBar.less" */
+/*************************************************************************
+Style of the RTA ToolBar
+**************************************************************************/
+/******************** SETTINGS FOR FADING OF TOOLBARS ********************/
+@-webkit-keyframes FadeIn {
+  from {
+    height: 0rem;
+  }
+  to {
+    height: 3rem;
+  }
+}
+@keyframes FadeIn {
+  from {
+    height: 0rem;
+  }
+  to {
+    height: 3rem;
+  }
+}
+@-webkit-keyframes FadeOut {
+  from {
+    height: 3rem;
+  }
+  to {
+    height: 0rem;
+  }
+}
+@keyframes FadeOut {
+  from {
+    height: 3rem;
+  }
+  to {
+    height: 0rem;
+  }
+}
+/******************** COMMON STYLING FOR BOTH TOOLBARS ********************/
+.sapUiRTAToolsMenuWrapper .sapMBtnDisabled {
+  opacity: 1;
+}
+.sapUiRTAToolsMenuWrapper .sapMLabel {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: normal;
+  text-shadow: none;
+  cursor: default;
+}
+.sapUiRTAToolsMenuWrapper .sapMIBar {
+  cursor: default;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 0rem;
+  position: absolute;
+  background-color: #000000;
+  visibility: visible;
+  z-index: 10;
+}
+.sapUiRTAToolsMenuWrapper .sapMIBar .sapMBarChild:first-child {
+  margin-left: 1.25rem;
+}
+.sapUiRTAToolsMenuWrapper .sapMIBar > .sapMBarChild:last-child {
+  margin-right: 1.25rem;
+}
+.sapUiRTAToolsMenuWrapper .sapMBtnContent {
+  color: #ffffff;
+}
+.sap-desktop .sapUiRTAToolsMenuWrapper :not(.sapMBtnDisabled) > .sapMBtnTransparent > .sapMBtnIcon {
+  color: #ffffff;
+}
+.sapUiRTAToolsMenuWrapper :not(.sapMBtnDisabled) > .sapMBtnTransparent.sapMBtnActive,
+.sapUiRTAToolsMenuWrapper :not(.sapMBtnDisabled):hover > .sapMBtnTransparent.sapMBtnActive {
+  background-color: #24f28e;
+  border-color: #24f28e;
+}
+.sapUiRTAToolsMenuWrapper .sapMBtnInner {
+  border-radius: initial;
+}
+html.sap-desktop .sapUiRTAToolsMenuWrapper .sapMBtn:focus > .sapMFocusable {
+  outline: 1px solid #ffffff;
+  outline-offset: -1px;
+}
+.sapUiRTAToolsMenuWrapper .sapMBtnTransparent.sapMBtnHoverable:hover {
+  background-color: #777777;
+}
+.sapUiRTAToolsMenuWrapper .sapUiDtToolbarSpacerStyle {
+  border-left: none !important;
+  border-right: none !important;
+}
+.sapUiRTAToolsMenuWrapper.sapMTBActive {
+  cursor: default;
+}
+.sapUiRTAToolsMenuWrapper .sapMTBSpacer {
+  cursor: default;
+}
+/* special handling for Internet Explorer */
+html[data-sap-ui-browser*="ie"].sap-desktop .sapUiRTAToolsMenuWrapper .sapMBtn:focus > .sapMFocusable {
+  outline: none;
+  border: 1px solid #ffffff;
+}
+/******************** SPECIAL STYLING FOR TOP TOOLBAR ********************/
+.sapUiRTAToolsMenuWrapper .sapUiRTAToolBarTop {
+  top: 0rem;
+  border-top: 0.25rem solid #257005;
+}
+.sapUiRTAToolsMenuWrapper .sapUiRTAToolBarTopVisible {
+  -webkit-animation: FadeIn ease-in 1;
+  animation: FadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.sapUiRTAToolsMenuWrapper .sapUiRTAToolBarTopInvisible {
+  -webkit-animation: FadeOut ease-in 1;
+  animation: FadeOut ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+/******************** SPECIAL STYLING FOR BOTTOM TOOLBAR ********************/
+.sapUiRTAToolsMenuWrapper .sapUiRTAToolBarBottom {
+  bottom: 0rem;
+  border-bottom: 0.25rem solid #257005;
+}
+.sapUiRTAToolsMenuWrapper .sapUiRTAToolBarBottomVisible {
+  -webkit-animation: FadeIn ease-in 1;
+  animation: FadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.sapUiRTAToolsMenuWrapper .sapUiRTAToolBarBottomInvisible {
+  -webkit-animation: FadeOut ease-in 1;
+  animation: FadeOut ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.sapUiRTAToolBarBottom.sapUiDtEmptyBackground {
+  background-image: none!important;
+}
+/* END "ToolBar.less" */
+/* START "FieldRepository.less" */
+/******************************************************************
+Style of the RTA FieldRepository
+*******************************************************************/
+.sapUIRtaFieldRepositoryDialog .sapUiDlgCont {
+  padding: 0px !important;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiDlgHdr {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiTable > div.sapUiTableCnt {
+  border-left: 0px;
+  border-right: 0px;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiDlgFooter {
+  height: 60px;
+}
+/* Sort Button */
+.sapUIRtaFieldRepositoryDialog .sapMBtn > .sapMBtnInner {
+  border: none;
+  background: transparent;
+}
+.sapUIRtaFieldRepositoryDialog .sapMBtn:hover > .sapMBtnInner {
+  background-color: #eaeaea;
+}
+.sapUIRtaFieldRepositoryDialog .sapMBtn:active > .sapMBtnInner {
+  background-color: #24f28e;
+  border-color: #24f28e;
+  color: #ffffff;
+}
+/* Footer Button */
+.sapUIRtaFieldRepositoryDialog .sapUiDlgFooter .sapMBtnInner {
+  background-color: transparent;
+  background: none;
+  border: none;
+  text-shadow: none;
+  color: #ffffff;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiDlgFooter .sapMBtn:hover > .sapMBtnHoverable {
+  background-color: #777777;
+}
+html.sap-desktop .sapUIRtaFieldRepositoryDialog .sapUiDlgFooter .sapMBtn:focus > .sapMFocusable {
+  outline: 1px solid #ffffff;
+  outline-offset: -1px;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiDlgFooter :not(.sapMBtnDisabled) > .sapMBtnInner.sapMBtnActive,
+.sapUIRtaFieldRepositoryDialog .sapUiDlgFooter :not(.sapMBtnDisabled):hover > .sapMBtnInner.sapMBtnActive {
+  background-color: #24f28e;
+  border-color: #24f28e;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiTableCol,
+.sapUIRtaFieldRepositoryDialog .sapUiTableTr > td {
+  border: none;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiTableCol,
+.sapUIRtaFieldRepositoryDialog .sapUiTableTr > td {
+  border: none;
+}
+.sapUIRtaFieldRepositoryDialog .sapMSFF {
+  border: none;
+}
+.sapUIRtaFieldRepositoryDialog .sapMTB {
+  border: none;
+}
+.sapUIRtaFieldRepositoryDialog .resourceListIF {
+  border-right: 1px solid #cdcdcd;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiLbl {
+  margin-left: 12px;
+}
+.sapUIRtaFieldRepositoryDialog .sapMIBar > .sapMBarChild:last-child {
+  margin-right: 12px;
+}
+.sapUIRtaFieldRepositoryDialog .sapUiLblIco {
+  font-size: 1.2rem;
+}
+.sapUIRtaFieldRepositoryDialog .sapUIRtaValueCell {
+  height: 18px;
+  width: 300px;
+}
+.sapUIRtaFieldRepositoryDialog .sapUIRtaCCDialogScrollContainer {
+  height: 400px !important;
+  width: 100% !important;
+}
+.sapUiRtaOverlayHover {
+  background: rgba(0, 0, 0, 0.108);
+  -webkit-transition: background 0.1s cubic-bezier(1, 0.01, 1, 0);
+  -moz-transition: background 0.1s cubic-bezier(1, 0.01, 1, 0);
+  -o-transition: background 0.1s cubic-bezier(1, 0.01, 1, 0);
+  transition: background 0.1s cubic-bezier(1, 0.01, 1, 0);
+}
+.sapUiDtOverlaySelected {
+  background: rgba(36, 242, 142, 0.1);
+}
+.sapUiDtOverlaySelected:after {
+  content: none;
+}
+.sapUiDtOverlaySelected.sapUiRtaOverlayHover {
+  background: rgba(36, 242, 142, 0.2);
+}
+.sapUiDtOverlayTargetZone:after {
+  border-color: #24f28e;
+}
+.sapUiDtOverlayTargetZone > .sapUiRtaOverlayPlaceholder {
+  background: #fafafa;
+}
+.sapUiDtOverlayDropZone > .sapUiDtOverlayMovable {
+  background: rgba(36, 242, 142, 0.1);
+}
+.sapUiDtOverlayDropZone > .sapUiDtOverlayMovable:after {
+  content: none;
+}
+.sapUiDtOverlayDropZone > .sapUiRtaOverlayPlaceholder {
+  background: #ffffff;
+}
+.sapUiDtOverlayDropZone > .sapUiRtaOverlayPlaceholder:after {
+  content: none;
+}
+.sapUiDtOverlayDropZone > .sapUiRtaOverlayPlaceholder:focus:before {
+  content: none;
+}
+.sapUiRtaEditableField {
+  border: 1px solid #969696;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sapUiDtDragGhost {
+  background: rgba(36, 242, 142, 0.1);
+}
+
+/******************* FILE /Base/baseLib/sap_bluecrystal/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/sap_bluecrystal/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/ui/rta/themes/sap_bluecrystal/library.less (Version 1.34.9) *******************/
+/******************* FILE /Base/baseLib/custom1bluecrystal3/custom.less (Version 10.30.3.240577.0) *******************/
+
+
+/******************* FILE /Base/baseLib/custom1bluecrystal3/base.less (Version 10.30.3.240577.0) *******************/
+/******************* FILE /UI5/sap/ui/core/themes/custom1bluecrystal3/global.less (Version 1.34.9) *******************/
+/******************* FILE /UI5/sap/ui/rta/themes/custom1bluecrystal3/library.less (Version 1.34.9) *******************/
+
+
+.sapThemeMetaData-UI5-sap-ui-rta{background-image: url('data:text/plain;utf-8,{"Path": "UI5.sap/ui/rta.custom1bluecrystal3.library", "PathPattern": "/%frameworkId%/%libId%/themes/%themeId%/%fileId%.css", "IECssRuleLimitFiles": [], "Extends": ["sap_bluecrystal","base"], "Version": { "Build":"1.34.9.20160414054601", "Source": "1.34.9", "Engine": "1.16.1"}}');}

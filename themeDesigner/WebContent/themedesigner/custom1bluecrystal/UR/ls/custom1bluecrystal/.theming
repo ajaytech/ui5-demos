@@ -1,0 +1,15 @@
+{
+	"sEntity": "Theme",
+	"sId": "custom1bluecrystal",
+	"sLabel": "Custom Blue Crystal",
+	"oExtends": "UR.ls.sap_bluecrystal",
+	"aBuildFiles": [
+		"standards"
+	],
+	"aFiles": [
+		"base",
+		"standards",
+		"custom"
+	],
+	"sTextDirections": "LTR"
+}

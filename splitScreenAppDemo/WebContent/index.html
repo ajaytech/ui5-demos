@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m,sap.ui.table"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("splitscreenappdemo");
+				var app = new sap.m.SplitApp("idSplitApp",{mode : sap.m.SplitAppMode.ShowHideMode});
+				var master = sap.ui.view({id:"idMaster1", viewName:"splitscreenappdemo.first", type:sap.ui.core.mvc.ViewType.JS});
+				app.addMasterPage(master);
+						
+				var detail = sap.ui.view({id:"idDetail1", viewName:"splitscreenappdemo.second", type:sap.ui.core.mvc.ViewType.JS});
+				app.addDetailPage(detail);
+						
+				
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

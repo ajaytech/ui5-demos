@@ -1,0 +1,17 @@
+.inputCss{
+	
+	width: 60% !important;
+    padding-left: 30% !important;
+	
+}
+
+.btnCss{
+	width: 60% !important;
+    padding-left: 30% !important;
+	
+}
+
+.btnCss>.sapMBtnInner{
+	
+	background:#007cc0;
+}
